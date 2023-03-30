@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <title> Monster Hunter </title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <style>
+            @font-face{font-family: MonsterHunter; src: url('txt/monster-hunter.ttf');}
+            body{background-image: url('img/background_img.jpg'); background-size: 1920px 950px; background-repeat: no-repeat;
+                 background-attachment: fixed;}
+            .button{background-color: #dd9e28; color: #fff; border: none; padding: 12px 20px; position: fixed; top: 0; right: 0; cursor: pointer; width: 150px; height: max-content;}
+            .button.active{right: 200;}
+            .menu{background-color: #fff; border: 1px solid #ccc; position: fixed; top: 0; right: -300px; width: 200px; height: 100%; padding: 10px; 
+                   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); transition: all 0.3s ease-in-out;}
+		    .menu.active{right: 0;}
+		    .menu a{display: block; padding: 5px 0; text-decoration: none; color: #333;}
+		    .menu a:hover{background-color: #f1f1f1;}
+        </style>
+    </head>
+    <body>
+        <button class="button" onclick="OpenMenu()"><a align="center"><img src="img/logo_monster_hunter.png" width="100px" height="100px"></a></button>
+        <div class="menu" id="menu">
+            <a href="#">Things</a>
+            <a href="#">Things</a>
+            <a href="#">Things</a>
+            <a href="#">Things</a>
+        </div>
+        <footer></footer>
+    </body>
+    <script type="text/javascript">
+        function OpenMenu(){
+            var button = document.getElementById("button");
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</html>

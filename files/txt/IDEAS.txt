@@ -1,0 +1,14 @@
+Project Web:
+
+- Game Introduction (optional)
+- Games of the saga
+- Monsters:
+	- Species
+	- Flagship monsters
+- Weapons
+	- Weapon types
+	- Hunting styles
+- Lore
+
+
+La web accederá a los diferentes apartados mediante una imagen que se hará de color segun donde este el ratón.

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botón que abre un menú con X para cerrarlo</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f1f1f1;
+		}
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 12px 20px;
+			position: fixed;
+			top: 0;
+			right: 200px;
+			cursor: pointer;
+			z-index: 1;
+			transition: all 0.3s ease-in-out;
+		}
+		.button.active {
+			right: 0; /* Ajustamos la posición del botón cuando el menú está abierto */
+		}
+		.menu {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			position: fixed;
+			top: 0;
+			right: -250px; /* Ajustamos la posición inicial del menú para que esté fuera de la pantalla */
+			width: 200px;
+			height: 100%;
+			padding: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			transition: all 0.3s ease-in-out;
+		}
+		.menu.active {
+			right: 0; /* Ajustamos la posición del menú al mostrarlo */
+		}
+		.close-button {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+		.close-button::before,
+		.close-button::after {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 2px;
+			background-color: #fff;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(45deg);
+			transition: all 0.3s ease-in-out;
+		}
+		.close-button::after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+		.close-button:hover::before,
+		.close-button:hover::after {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<button class="button" onclick="toggleMenu()">Menú</button>
+	<div class="menu" id="menu">
+		<div class="close-button" onclick="toggleMenu()"></div>
+		<a href="#">Inicio</a>
+		<a href="#">Productos</a>
+		<a href="#">Servicios</a>
+		<a href="#">Contacto</a>
+	</div>
+	<script>
+		function toggleMenu() {
+			var menu = document.getElementById("menu");
+			menu.classList.toggle("active");
+			var button = document.querySelector(".button");
+			button.classList.toggle("active");
+		}
+	</script>
+</body>
+</html>
