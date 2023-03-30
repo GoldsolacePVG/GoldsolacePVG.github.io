@@ -9,6 +9,7 @@
         <title> Monster Hunter </title>
         <link rel="icon" type="image/png" href="img/web_logo.png">
         <link rel="stylesheet" href="css/w3_school.css">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <style>
             @font-face{
                 font-family: MonsterHunter; 
@@ -16,53 +17,17 @@
             }
             body{
                 background-image: url('img/background_img.jpg'); 
-                background-size: 1920px 950px; 
+                background-size: 1920px 1000px; 
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-            }
-            .button{
-                background-color: #dd9e28; 
-                color: #fff; 
-                border: none; 
-                padding: 12px 20px; 
-                position: fixed; 
-                top: 0; 
-                right: 0; 
-                cursor: pointer; 
-                width: 150px; 
-                height: max-content;
-            }
-            .button.active{
-                right: 200;
-            }
-            .menu{
-                background-color: #fff; 
-                border: 1px solid #ccc; 
-                position: fixed; top: 0; 
-                right: -300px; 
-                width: 200px; 
-                height: 100%; 
-                padding: 10px; 
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-                transition: all 0.3s ease-in-out;
-            }
-		    .menu.active{
-                right: 0;
-            }
-		    .menu a{
-                display: block; 
-                padding: 5px 0; 
-                text-decoration: none; 
-                color: #333;
-            }
-		    .menu a:hover{
-                background-color: #f1f1f1;
             }
         </style>
     </head>
     <body>
+        <!-- Menú Section -->
         <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none; background-color: #b95419;" id="mySidebar">
-            <a href="#" class="w3-bar-item w3-button"><h1 class="w3-xxxlarge w3-text-theme" style="font-family: MonsterHunter;">Main Navigation</h1></a>
+            <h1 class="w3-xxxlarge w3-text-theme" style="font-family: MonsterHunter;">Main Navigation</h1>
+            <br>
             <button class="w3-bar-item w3-button" onclick="w3_close()" style="font-family: MonsterHunter;"> Close <img src="img/cross_menu.png" width="auto" height="65px"><i class="fa fa-remove"></i></button>
             <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Games <img src="img/mando.png" width="auto" height="50px"></a>
             <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Monsters <img src="img/monsters_icon.png" width="auto" height="70px"></a>
