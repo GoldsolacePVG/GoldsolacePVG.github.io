@@ -8,6 +8,7 @@
         <meta name="keywords" content="Capcom, MONSTER HUNTER RISE, mh rise, monsterhunter rise, MONSTER HUNTER WORLD, mh world, monsterhunter world, MONSTER HUNTER GEN, mh gen, monsterhunter gen">
         <title> Monster Hunter </title>
         <link rel="icon" type="image/png" href="img/web_logo.png">
+        <link rel="stylesheet" href="css/w3_school.css">
         <style>
             @font-face{
                 font-family: MonsterHunter; 
@@ -60,20 +61,29 @@
         </style>
     </head>
     <body>
-        <button class="button" onclick="OpenMenu()"><a align="center"><img src="img/logo_monster_hunter.png" width="100px" height="100px"></a></button>
-        <div class="menu" id="menu">
-            <a href="#">Things</a>
-            <a href="#">Things</a>
-            <a href="#">Things</a>
-            <a href="#">Things</a>
-        </div>
-        <footer></footer>
+        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none; background-color: #b95419;" id="mySidebar">
+            <a href="#" class="w3-bar-item w3-button"><h1 class="w3-xxxlarge w3-text-theme" style="font-family: MonsterHunter;">Main Navigation</h1></a>
+            <button class="w3-bar-item w3-button" onclick="w3_close()" style="font-family: MonsterHunter;"> Close <img src="img/cross_menu.png" width="auto" height="65px"><i class="fa fa-remove"></i></button>
+            <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Games <img src="img/mando.png" width="auto" height="50px"></a>
+            <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Monsters <img src="img/monsters_icon.png" width="auto" height="70px"></a>
+            <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Weapons <img src="img/longsword_icon.webp" width="auto" height="50px"></a>
+            <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Lore <img src="img/lore_icon.webp" width="auto" height="60px"></a>
+        </nav>
+        <header class="w3-container w3-theme w3-padding" id="myHeader">
+            <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"><img src="img/logo_monster_hunter.png" width="100px" height="100px"></i>
+        </header>
     </body>
     <script type="text/javascript">
-        function OpenMenu(){
-            var button = document.getElementById("button");
-            var menu = document.getElementById("menu");
-            menu.classList.toggle("active");
-        }
+        // Side navigation
+            function w3_open(){
+                var x = document.getElementById("mySidebar");
+                x.style.width = "100%";
+                x.style.fontSize = "40px";
+                x.style.paddingTop = "10%";
+                x.style.display = "block";
+            }
+            function w3_close(){
+                document.getElementById("mySidebar").style.display = "none";
+            }
     </script>
 </html>
