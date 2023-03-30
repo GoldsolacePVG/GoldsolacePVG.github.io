@@ -11,27 +11,60 @@
         <style>
             /*Elementos Neutralidad*/
             *{box-sizing: border-box;}
-            @font-face{font-family: MonsterHunter; src: url('files/txt/monster-hunter.ttf');}
-            html{background-image: url('files/img/background_img.jpg'); background-size: 1920px 950px; background-repeat: no-repeat;
-                 background-attachment: fixed;}
-            body{background-image: url('files/img/pergamino.png'); background-size: contain; background-repeat: no-repeat;
-                 background-attachment: fixed; background-position-x: 200%; background-position-y: 50%; display: flex; 
-                 align-items: center; justify-content: center; padding: 0;}
-            img{width: auto; height: 250px; filter: grayscale(100%); transition: filter 0.3s ease-in-out;}
-            img:hover{filter: grayscale(0%);}
+            @font-face{
+                font-family: MonsterHunter; 
+                src: url('files/txt/monster-hunter.ttf');
+            }
+            html{
+                background-image: url('files/img/background_img.jpg'); 
+                background-size: 1920px 950px; 
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            body{
+                background-image: url('files/img/pergamino.png'); 
+                background-size: contain; 
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-position-x: 200%; 
+                background-position-y: 50%; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                padding: 0;
+            }
+            img{
+                width: auto; 
+                height: 250px; 
+                filter: grayscale(100%); 
+                transition: filter 0.3s ease-in-out;
+            }
+            img:hover{
+                filter: grayscale(0%);
+            }
 
             /*Elementos Estructurales*/
             /*Estilos Fuentes*/
             /*Clases*/
-            .perfil{width: auto; height: 400px; padding: 20px;}
-		    .perfil img{max-width: 100%; max-height: 100%; margin: -0.3%; object-position: center;}
+            .perfil{
+                width: auto; 
+                height: 400px; 
+                padding: 20px;
+                float: left;
+            }
+		    .perfil img{
+                max-width: 100%; 
+                max-height: 100%; 
+                margin: -0.3%; 
+                object-position: center;
+            }
 
             @media only screen and (max-width:768px){}
             @media only screen and (max-width:480px){}
         </style>
     </head>
     <body>
-        <div class="perfil">        
+        <div class="perfil">       
             <a href="files/1_intro.htm"><img src="files/img/Intro_menu.jpg" alt="" title="Go to introduction"></a>
             <a href="files/2_games.htm"><img src="files/img/Games_menu.jpg" alt="" title="Go to games"></a>
             <a href="files/3_monsters.htm"><img src="files/img/Monster_menu.jpg" alt="" title="Go to monsters"></a>
