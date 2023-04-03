@@ -26,8 +26,9 @@
                 background-size: contain; 
                 background-repeat: no-repeat;
                 background-attachment: fixed; 
-                background-position-x: 200%; 
-                background-position-y: 50%; 
+                /* background-position-x: 200%; 
+                background-position-y: 50%;  */
+                background-position: center;
                 display: flex; 
                 align-items: center; 
                 justify-content: center; 
@@ -49,18 +50,22 @@
             .perfil{
                 width: auto; 
                 height: 400px; 
-                padding: 20px;
+                padding: 75px;
                 float: left;
             }
 		    .perfil img{
                 max-width: 100%; 
                 max-height: 100%; 
                 margin: -0.3%; 
-                object-position: center;
+                object-position:center;
             }
 
             @media only screen and (max-width:768px){}
-            @media only screen and (max-width:480px){}
+            @media only screen and (max-width:480px){
+                body{background-image: none;}
+                img{height: 230px; width: auto;}
+                .perfil{float: inline-start;}
+            }
         </style>
     </head>
     <body>

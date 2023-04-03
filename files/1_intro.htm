@@ -21,34 +21,62 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
+            .logo{width: auto; height: 100px; padding-left: 15px;}
+
+            @media only screen and (max-width:768px){
+                .logo{height: 110px; width: auto; padding-top: 20px;}
+            }
+            @media only screen and (max-width:480px){
+                .logo{height: 110px; width: auto; padding-top: 20px;}
+            }
         </style>
     </head>
     <body>
-        <!-- Menú Section -->
-        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none; background-color: #b95419;" id="mySidebar">
-            <h1 class="w3-xxxlarge w3-text-theme" style="font-family: MonsterHunter;">Main Navigation</h1>
-            <br>
-            <button class="w3-bar-item w3-button" onclick="w3_close()" style="font-family: MonsterHunter;"> Close <img src="img/cross_menu.png" width="auto" height="65px"><i class="fa fa-remove"></i></button>
-            <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Games <img src="img/mando.png" width="auto" height="50px"></a>
-            <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Monsters <img src="img/monsters_icon.png" width="auto" height="70px"></a>
-            <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Weapons <img src="img/longsword_icon.webp" width="auto" height="50px"></a>
-            <a href="#" class="w3-bar-item w3-button" style="font-family: MonsterHunter;"> Lore <img src="img/lore_icon.webp" width="auto" height="60px"></a>
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: #b95419" id="mySidebar"><br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size: 25px; font-family: MonsterHunter;">CLOSE MENU</a>
+            <img src="img/logo_monster_hunter.png" class="logo">
+            <div class="w3-container">
+              <h3 class="w3-padding-64" style="font-family: MonsterHunter; font-size: xxx-large;"><b>Monster<br>Hunter</b></h3>
+            </div>
+            <div class="w3-bar-block">
+              <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Home</a>
+              <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Games      <img src="img/mando.png" width="auto" height="50px"></a> 
+              <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Monsters       <img src="img/monsters_icon.png" width="auto" height="70px"></a> 
+              <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Weapons       <img src="img/longsword_icon.webp" width="auto" height="50px"></a> 
+              <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="img/lore_icon.webp" width="auto" height="60px"></a>
+            </div>
         </nav>
-        <header class="w3-container w3-theme w3-padding" id="myHeader">
-            <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"><img src="img/logo_monster_hunter.png" width="100px" height="100px"></i>
+  
+        <!-- Top menu on small screens -->
+        <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="background-color: #b95419;">
+            <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="img/logo_monster_hunter.png" width="75px" height="75px"></a>
+            <span style="font-family: MonsterHunter; font-size: 30px;" align="center">MONSTER HUNTER</span>
         </header>
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:340px;margin-right:40px">
+            <!-- Header -->
+            <div class="w3-container" style="margin-top:80px" id="showcase">
+                <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+                <hr style="width:50px;border:5px solid red" class="w3-round">
+            </div>
+        </div>
+
+
     </body>
     <script type="text/javascript">
-        // Side navigation
-            function w3_open(){
-                var x = document.getElementById("mySidebar");
-                x.style.width = "100%";
-                x.style.fontSize = "40px";
-                x.style.paddingTop = "10%";
-                x.style.display = "block";
-            }
-            function w3_close(){
-                document.getElementById("mySidebar").style.display = "none";
-            }
+        // Script to open and close sidebar
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
     </script>
 </html>
