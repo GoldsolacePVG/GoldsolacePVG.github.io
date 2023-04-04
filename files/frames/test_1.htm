@@ -1,86 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Botón que abre un menú con X para cerrarlo</title>
+	<title>Ejemplo de artículo con aside</title>
 	<style>
 		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+			color: #333;
 			margin: 0;
 			padding: 0;
-			background-color: #f1f1f1;
 		}
-		.button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 12px 20px;
-			position: fixed;
-			top: 0;
-			right: 200px;
-			cursor: pointer;
-			z-index: 1;
-			transition: all 0.3s ease-in-out;
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 		}
-		.button.active {
-			right: 0; /* Ajustamos la posición del botón cuando el menú está abierto */
+
+		article {
+			flex-basis: 70%;
+			margin-bottom: 20px;
 		}
-		.menu {
-			background-color: #fff;
-			border: 1px solid #ccc;
-			position: fixed;
-			top: 0;
-			right: -250px; /* Ajustamos la posición inicial del menú para que esté fuera de la pantalla */
-			width: 200px;
-			height: 100%;
+
+		aside {
+			flex-basis: 28%;
+			margin-bottom: 20px;
+			background-color: #eee;
 			padding: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-			transition: all 0.3s ease-in-out;
 		}
-		.menu.active {
-			right: 0; /* Ajustamos la posición del menú al mostrarlo */
+
+		h1 {
+			font-size: 32px;
+			text-align: center;
+			margin-top: 0;
 		}
-		.close-button {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			cursor: pointer;
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
 		}
-		.close-button::before,
-		.close-button::after {
-			content: "";
-			position: absolute;
-			width: 20px;
-			height: 2px;
-			background-color: #fff;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%) rotate(45deg);
-			transition: all 0.3s ease-in-out;
-		}
-		.close-button::after {
-			transform: translate(-50%, -50%) rotate(-45deg);
-		}
-		.close-button:hover::before,
-		.close-button:hover::after {
-			background-color: #ccc;
+
+		@media screen and (max-width: 600px) {
+			.container {
+				flex-direction: column;
+			}
+
+			article, aside {
+				flex-basis: 100%;
+			}
 		}
 	</style>
 </head>
 <body>
-	<button class="button" onclick="toggleMenu()">Menú</button>
-	<div class="menu" id="menu">
-		<div class="close-button" onclick="toggleMenu()"></div>
-		<a href="#">Inicio</a>
-		<a href="#">Productos</a>
-		<a href="#">Servicios</a>
-		<a href="#">Contacto</a>
+	<div class="container">
+		<article>
+			<h1>Ejemplo de artículo con aside</h1>
+			<p>Este es un ejemplo de un artículo con un aside que contiene información adicional. Puedes escribir aquí todo lo que necesites para dar más detalles sobre algún tema en particular. Los artículos son muy útiles para presentar información de manera clara y organizada.</p>
+			<p>Este es otro párrafo de información en el artículo. Puedes agregar tantos párrafos como necesites para presentar toda la información que quieras.</p>
+		</article>
+		<aside>
+			<h2>Información adicional</h2>
+			<p>Este es el aside que contiene información adicional. Puedes agregar aquí cualquier contenido adicional que quieras mostrar al lado del artículo principal.</p>
+		</aside>
 	</div>
-	<script>
-		function toggleMenu() {
-			var menu = document.getElementById("menu");
-			menu.classList.toggle("active");
-			var button = document.querySelector(".button");
-			button.classList.toggle("active");
-		}
-	</script>
 </body>
 </html>

@@ -1,10 +1,10 @@
-function w3_open(){
-    var x = document.getElementById("mySidebar");
-    x.style.width = "50%";
-    x.style.fontSize = "40px";
-    x.style.paddingTop = "10%";
-    x.style.display = "block";
-}
-function w3_close(){
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
-}
+    document.getElementById("myOverlay").style.display = "none";
+  }
