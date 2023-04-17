@@ -39,13 +39,14 @@
 			}
 
             .logo{width: auto; height: 100px; padding-left: 15px;}
-            .intro_images{float: left; padding: 10px; height: 300px; width: auto; border-radius: 8%; margin-right: 5px;}
+            .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
             .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
             .explanation_1{margin-right: 20px;}
             .explanation_2{margin-left: 20px;}
 
             @media only screen and (max-width:768px){
                 body{width: 90%;}
+                .intro_images{height: auto; width: 100%;}
                 .logo{height: 110px; width: auto; padding-top: 20px;}
                 .history{width: 280px; height: auto;}
             }
@@ -62,12 +63,11 @@
         <!-- STATIC MENU -->
         <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: #b95419" id="mySidebar"><br>
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size: 25px; font-family: MonsterHunter;">CLOSE MENU</a>
-            <img src="img/logo_monster_hunter.png" class="logo">
+            <a href="../index.html"><img src="img/logo_monster_hunter.png" class="logo"></a>
             <div class="w3-container">
               <h3 class="w3-padding-64" style="font-family: MonsterHunter; font-size: xxx-large;"><b>Monster<br>Hunter</b></h3>
             </div>
             <div class="w3-bar-block">
-              <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Home</a>
               <a href="2_games.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Games      <img src="img/mando.png" width="auto" height="50px"></a> 
               <a href="3_monsters.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Monsters       <img src="img/monsters_icon.png" width="auto" height="70px"></a> 
               <a href="4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Weapons       <img src="img/longsword_icon.webp" width="auto" height="50px"></a> 
@@ -85,7 +85,7 @@
         <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
         <!-- WEB CONTENT -->
-        <div class="w3-main" style="margin-left:340px;margin-right:40px">
+        <div class="w3-main" style="margin-left:340px; margin-right:40px">
             <!-- Header -->
             <div class="w3-container" style="margin-top:100px; margin-bottom: 50px;" id="showcase">
                 <h1 class="w3-jumbo" style="font-family: MonsterHunter;"><b>Monster Hunter</b></h1>
@@ -94,7 +94,7 @@
             </div>
 
             <!-- TEXT -->
-            <div class="w3-row-padding" align="center">
+            <!-- <div class="w3-row-padding" align="center">
                 <div class="w3-half explanation_1" style="background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
                     <img src="img/first_mh.jpg" alt="MH" class="intro_images">
                     <p style="font-family: MonsterHunter; font-size: 19px;"> Monster Hunter es una serie de videojuegos de acción-aventura desarrollada y 
@@ -118,7 +118,7 @@
                         jugabilidad cooperativa para que los jugadores de cualquier nivel de habilidad, trabajando con otros, pudieran sentirse realizados al derrotar 
                         criaturas gigantes.Monster Hunter fue un éxito, vendiendo más de 1 millón de copias, principalmente en Japón.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </body>
