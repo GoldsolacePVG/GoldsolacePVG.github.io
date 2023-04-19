@@ -37,25 +37,34 @@
                 margin-right: 10px;
                 background-color: #d47e4c;
 			}
-
             .logo{width: auto; height: 100px; padding-left: 15px;}
             .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
             .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
             .explanation_1{margin-right: 20px;}
             .explanation_2{margin-left: 20px;}
+            .video_container{height: 450px;}
 
-            @media only screen and (max-width:768px){
+            /*Tablet*/
+            @media only screen and (min-width:480px) and (max-width:768px){
                 body{width: 90%;}
-                .intro_images{height: auto; width: 100%;}
+                .information{margin-left: 60px; margin-right: -15px;}
+                .intro_images{height: auto; width: 50%;}
                 .logo{height: 110px; width: auto; padding-top: 20px;}
                 .history{width: 280px; height: auto;}
             }
+            /*Movil*/
             @media only screen and (max-width:480px){
                 body{width: 80%;}
+                .information{margin-left: 50px; margin-right: -45px;}
+                .history{float: right; width: 97%;}
+                .intro_images{height: 30%; width: auto;}
                 .logo{height: 110px; width: auto; padding-top: 15px;}
                 .explanation_1{margin-right: 0%;}
                 .explanation_2{margin-left: 0%;}
                 .w3-half{width: 100%; align-items: center;}
+                .w3-xxxlarge{font-size: 40px;}
+                .video_exp{width: 300px; height: auto;}
+                .video_container{height: 270px;}
             }
         </style>
     </head>
@@ -94,31 +103,38 @@
             </div>
 
             <!-- TEXT -->
-            <!-- <div class="w3-row-padding" align="center">
-                <div class="w3-half explanation_1" style="background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
-                    <img src="img/first_mh.jpg" alt="MH" class="intro_images">
-                    <p style="font-family: MonsterHunter; font-size: 19px;"> Monster Hunter es una serie de videojuegos de acción-aventura desarrollada y 
-                        publicada por Capcom y que fue lanzada por primera vez para la consola PlayStation 2 bajo el nombre de Monster Hunter, la saga 
-                        continúa activa hasta la actualidad, con numerosos spin-offs, actualizaciones de Frontier y su último título principal siendo 
-                        Monster Hunter Rise. Los videojuegos son principalmente videojuegos de rol de acción. <br><br>El jugador asume el papel de un cazador, 
-                        que debe matar o atrapar monstruos grandes en varios entornos como parte de las misiones que les dan los locales. Como parte de su 
-                        jugabilidad principal, los jugadores utilizan el botín obtenido al matar monstruos, reunir recursos y recompensas de misiones para 
-                        crear armas, armaduras y otros objetos mejorados que les permitan enfrentarse a monstruos más poderosos. Todos los videojuegos de la 
-                        serie principal cuentan con un modo multijugador (por lo general, hasta cuatro jugadores en partidas cooperativas), pero también se 
-                        permite el modo de un solo jugador.</p>
+            <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
+                <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>¿De que trata?</b></h1>
+                <img src="img/first_mh.jpg" alt="MH" class="intro_images">
+                <p style="font-family: MonsterHunter; font-size: 19px;"> Monster Hunter es una serie de videojuegos de acción-aventura desarrollada y 
+                    publicada por Capcom y que fue lanzada por primera vez para la consola PlayStation 2 bajo el nombre de Monster Hunter, la saga 
+                    continúa activa hasta la actualidad, con numerosos spin-offs, actualizaciones de Frontier y su último título principal siendo 
+                    Monster Hunter Rise. Los videojuegos son principalmente videojuegos de rol de acción. <br><br>El jugador asume el papel de un cazador, 
+                    que debe matar o atrapar monstruos grandes en varios entornos como parte de las misiones que les dan los locales. Como parte de su 
+                    jugabilidad principal, los jugadores utilizan el botín obtenido al matar monstruos, reunir recursos y recompensas de misiones para 
+                    crear armas, armaduras y otros objetos mejorados que les permitan enfrentarse a monstruos más poderosos. Todos los videojuegos de la 
+                    serie principal cuentan con un modo multijugador (por lo general, hasta cuatro jugadores en partidas cooperativas), pero también se 
+                    permite el modo de un solo jugador.</p>
+            </div>
+            <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
+                <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>La Leyenda de los 3</b></h1>
+                <img src="img/collage.png" alt="Things" class="history">
+                <p style="font-family: MonsterHunter; font-size: 19px;">El primer videojuego de Monster Hunter fue uno de los tres títulos que Capcom había 
+                    desarrollado para aprovechar la capacidad de procesamiento y las capacidades en línea de la PlayStation 2. Según Ryozo Tsujimoto, quien 
+                    ha sido el productor de la serie desde Monster Hunter Freedom 2, en ese entonces la consola había disminuido la brecha con los videojuegos 
+                    arcade en capacidades; los otros dos títulos de este tipo fueron Auto Modellista y Resident Evil Outbreak. <br><br>Tsujimoto consideró a Monster Hunter 
+                    como la culminación del trabajo de estos otros dos títulos una vez que fue lanzado. También sintió que el videojuego estaba destinado a tal 
+                    jugabilidad cooperativa para que los jugadores de cualquier nivel de habilidad, trabajando con otros, pudieran sentirse realizados al derrotar 
+                    criaturas gigantes.Monster Hunter fue un éxito, vendiendo más de 1 millón de copias, principalmente en Japón.</p>
+            </div>
+            <br>
+            <div class="w3-container information video_container" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
+                <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;" align="center"><b>Video Explicativo</b></h1>
+                <div align="center">
+                    <iframe class="video_exp" style="margin-top: 10px;" width="560" height="315" src="https://www.youtube.com/embed/MYXnQQIIwuw" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                 </div>
-            
-                <div class="w3-half explanation_2" style="background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
-                    <img src="img/collage.png" alt="Things" class="history">
-                    <p style="font-family: MonsterHunter; font-size: 19px;">El primer videojuego de Monster Hunter fue uno de los tres títulos que Capcom había 
-                        desarrollado para aprovechar la capacidad de procesamiento y las capacidades en línea de la PlayStation 2. Según Ryozo Tsujimoto, quien 
-                        ha sido el productor de la serie desde Monster Hunter Freedom 2, en ese entonces la consola había disminuido la brecha con los videojuegos 
-                        arcade en capacidades; los otros dos títulos de este tipo fueron Auto Modellista y Resident Evil Outbreak. <br>Tsujimoto consideró a Monster Hunter 
-                        como la culminación del trabajo de estos otros dos títulos una vez que fue lanzado. También sintió que el videojuego estaba destinado a tal 
-                        jugabilidad cooperativa para que los jugadores de cualquier nivel de habilidad, trabajando con otros, pudieran sentirse realizados al derrotar 
-                        criaturas gigantes.Monster Hunter fue un éxito, vendiendo más de 1 millón de copias, principalmente en Japón.</p>
-                </div>
-            </div> -->
+            </div>
         </div>
 
     </body>
