@@ -37,7 +37,25 @@
                 margin-right: 10px;
                 background-color: #d47e4c;
 			}
-
+            div.gallery img{
+                width: auto;
+                height: 75px;
+            }
+            div.desc{
+                padding: 10px;
+                text-align: center;
+                font-family: MonsterHunter;
+                font-size: 22px;
+            }
+            #borderimg{ 
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(img/mh_border.png) 25 stretch;
+                border-image-width: 25px;
+                box-shadow: 2px 2px;
+            }
+            
+            .responsive{padding: 0 6px; float: left; width: 13.222222%; margin-bottom: 5px; margin-right: 10px; margin-left: 5px;}
             .logo{width: auto; height: 100px; padding-left: 15px;}
             .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
             .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
@@ -49,6 +67,7 @@
                 .intro_images{height: auto; width: 100%;}
                 .logo{height: 110px; width: auto; padding-top: 20px;}
                 .history{width: 280px; height: auto;}
+                .responsive{width: 49.99999%; margin: 6px 0;}
             }
             @media only screen and (max-width:480px){
                 body{width: 80%;}
@@ -56,6 +75,13 @@
                 .explanation_1{margin-right: 0%;}
                 .explanation_2{margin-left: 0%;}
                 .w3-half{width: 100%; align-items: center;}
+                .responsive{width: 100%;}
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
             }
         </style>
     </head>
@@ -63,15 +89,14 @@
         <!-- STATIC MENU -->
         <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: #b95419" id="mySidebar"><br>
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size: 25px; font-family: MonsterHunter;">CLOSE MENU</a>
-            <img src="img/logo_monster_hunter.png" class="logo">
+            <a href="../index.html"><img src="img/logo_monster_hunter.png" class="logo"></a>
             <div class="w3-container">
               <h3 class="w3-padding-64" style="font-family: MonsterHunter; font-size: xxx-large;"><b>Monster<br>Hunter</b></h3>
             </div>
             <div class="w3-bar-block">
-              <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Home</a>
+              <a href="1_intro.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Intro       <img src="img/intro_icon.png" width="auto" height="45px" style="margin-left: 10px; margin-bottom: 5px;"></a> 
               <a href="2_games.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Games      <img src="img/mando.png" width="auto" height="50px"></a> 
               <a href="3_monsters.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Monsters       <img src="img/monsters_icon.png" width="auto" height="70px"></a> 
-              <a href="4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Weapons       <img src="img/longsword_icon.webp" width="auto" height="50px"></a> 
               <a href="5_lore.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="img/lore_icon.webp" width="auto" height="60px"></a>
             </div>
         </nav>
@@ -84,6 +109,133 @@
 
         <!-- OPENING EFFECT -->
         <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- WEB CONTENT -->
+        <div class="w3-main" style="margin-left:340px; margin-right:40px">
+            <!-- Header -->
+            <div class="w3-container" style="margin-top:100px; margin-bottom: 50px;" id="showcase">
+                <h1 class="w3-jumbo" style="font-family: MonsterHunter;"><b>Monster Hunter</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red" style="font-family: MonsterHunter;"><b>Weapons</b></h1>
+                <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
+            </div>
+
+            <!-- Gallery -->
+            <div>
+                <!-- GreatSword -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/greatsword_icon.webp" alt="GS" width="auto" height="100" title="Greatsword">
+                        <div class="desc">GS</div>
+                    </div>
+                </div>
+
+                <!-- LongSword -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/longsword_icon.webp" alt="LS" width="auto" height="100" title="Longsword">
+                        <div class="desc">LS</div>
+                    </div>
+                </div>
+
+                <!-- Sword and Shield -->  
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/SnS_icon.webp" alt="SnS" width="auto" height="100" title="Sword and Shield">
+                        <div class="desc">SnS</div>
+                    </div>
+                </div>
+
+                <!-- Dual Blades -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/dual_blades_icon.webp" alt="DB" width="auto" height="100" title="Dual Blades">
+                        <div class="desc">DB</div>
+                    </div>
+                </div>
+
+                <!-- Hammer -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/hammer_icon.webp" alt="H" width="auto" height="100" title="Hammer">
+                        <div class="desc">H</div>
+                    </div>
+                </div>
+
+                <!-- Hunting Horn -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/HH_icon.webp" alt="HH" width="auto" height="100" title="Hunting Horn">
+                        <div class="desc">HH</div>
+                    </div>
+                </div>
+
+                <!-- Lance -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/lance_icon.webp" alt="L" width="auto" height="100" title="Lance">
+                        <div class="desc">L</div>
+                    </div>
+                </div>
+
+                <!-- GunLance -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/gunlance_icon.webp" alt="GL" width="auto" height="100" title="Gunlance">
+                        <div class="desc">GL</div>
+                    </div>
+                </div>
+
+                <!-- SwitchAxe -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/Swaxe_icon.webp" alt="SA" width="auto" height="100" title="SwitchAxe">
+                        <div class="desc">SA</div>
+                    </div>
+                </div>
+
+                <!-- ChargeBlade -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/chblade_icon.webp" alt="CB" width="auto" height="100" title="ChargeBlade">
+                        <div class="desc">CB</div>
+                    </div>
+                </div>
+
+                <!-- Insect Glaive -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/insect_glaive_icon.webp" alt="IG" width="auto" height="100" title="Insect Glaive">
+                        <div class="desc">IG</div>
+                    </div>
+                </div>
+
+                <!-- Light Bowgun -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/Lbowgun_icon.webp" alt="LBG" width="auto" height="100" title="Light Bowgun">
+                        <div class="desc">LBG</div>
+                    </div>
+                </div>
+
+                <!-- Heavy Bowgun -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/Hbowgun_icon.webp" alt="HBG" width="auto" height="100" title="Heavy Bowgun">
+                        <div class="desc">HBG</div>
+                    </div>
+                </div>
+
+                <!-- Bow -->
+                <div class="responsive" id="borderimg">
+                    <div class="gallery" align="center">
+                        <img src="img/bow_icon.webp" alt="B" width="auto" height="100" title="Bow">
+                        <div class="desc">B</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+        </div>
+              
+              
     </body>
     <script type="text/javascript">
         // Script to open and close sidebar
