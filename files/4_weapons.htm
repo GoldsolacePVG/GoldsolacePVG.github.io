@@ -55,6 +55,8 @@
                 box-shadow: 2px 2px;
             }
             
+            .last_part{width: 100%;}
+            .cell_footer{width: 100px;}
             .end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
             .responsive{padding: 0 6px; float: left; width: 13.222222%; margin-bottom: 5px; margin-right: 10px; margin-left: 5px;}
             .logo{width: auto; height: 100px; padding-left: 15px;}
@@ -63,12 +65,16 @@
                 body{width: 90%;}
                 .logo{height: 110px; width: auto; padding-top: 20px;}
                 .responsive{width: 49.99999%; margin: 6px 0;}
+                .last_part{width: 104%;}
+                .cell_footer{width: 200px;}
+                .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
             }
             @media only screen and (max-width:480px){
                 body{width: 80%;}
                 .logo{height: 110px; width: auto; padding-top: 15px;}
-                .w3-half{width: 100%; align-items: center;}
                 .responsive{width: 100%;}
+                .last_part{width: 113%;}
+                .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
             }
 
             .clearfix:after {
@@ -115,7 +121,7 @@
             <!-- Gallery -->
             <div>
                 <!-- GreatSword -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(1)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/greatsword_icon.webp" alt="GS" width="auto" height="100" title="Greatsword">
@@ -125,7 +131,7 @@
                 </a>
 
                 <!-- LongSword -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(2)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/longsword_icon.webp" alt="LS" width="auto" height="100" title="Longsword">
@@ -135,7 +141,7 @@
                 </a>
 
                 <!-- Sword and Shield -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(3)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/SnS_icon.webp" alt="SnS" width="auto" height="100" title="Sword and Shield">
@@ -145,7 +151,7 @@
                 </a>
 
                 <!-- Dual Blades -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(4)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/dual_blades_icon.webp" alt="DB" width="auto" height="100" title="Dual Blades">
@@ -155,7 +161,7 @@
                 </a>
 
                 <!-- Hammer -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(5)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/hammer_icon.webp" alt="H" width="auto" height="100" title="Hammer">
@@ -165,7 +171,7 @@
                 </a>
 
                 <!-- Hunting Horn -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(6)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/HH_icon.webp" alt="HH" width="auto" height="100" title="Hunting Horn">
@@ -175,7 +181,7 @@
                 </a>
 
                 <!-- Lance -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(7)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/lance_icon.webp" alt="L" width="auto" height="100" title="Lance">
@@ -185,7 +191,7 @@
                 </a>
 
                 <!-- GunLance -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(8)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/gunlance_icon.webp" alt="GL" width="auto" height="100" title="Gunlance">
@@ -195,7 +201,7 @@
                 </a>
 
                 <!-- SwitchAxe -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(9)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/Swaxe_icon.webp" alt="SA" width="auto" height="100" title="SwitchAxe">
@@ -205,7 +211,7 @@
                 </a>
 
                 <!-- ChargeBlade -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(10)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/chblade_icon.webp" alt="CB" width="auto" height="100" title="ChargeBlade">
@@ -215,7 +221,7 @@
                 </a>
 
                 <!-- Insect Glaive -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(11)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/insect_glaive_icon.webp" alt="IG" width="auto" height="100" title="Insect Glaive">
@@ -225,7 +231,7 @@
                 </a>
 
                 <!-- Light Bowgun -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(12)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/Lbowgun_icon.webp" alt="LBG" width="auto" height="100" title="Light Bowgun">
@@ -235,7 +241,7 @@
                 </a>
 
                 <!-- Heavy Bowgun -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(13)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/Hbowgun_icon.webp" alt="HBG" width="auto" height="100" title="Heavy Bowgun">
@@ -245,7 +251,7 @@
                 </a>
 
                 <!-- Bow -->
-                <a href="#weapon_info">
+                <a href="#weapon_info" onclick="ChangeContent(14)">
                     <div class="responsive" id="borderimg">
                         <div class="gallery" align="center">
                             <img src="img/bow_icon.webp" alt="B" width="auto" height="100" title="Bow">
@@ -259,17 +265,15 @@
 
             <a name="weapon_info"></a>
             <div align="center" style="margin-top: 30px;">
-                <iframe src="http://www.esat.es" width="100%" height="600px" name="main_frame"></iframe>
+                <iframe id="mainFrame" src="http://www.esat.es" width="100%" height="600px" name="main_frame"></iframe>
             </div>
             <!-- Footer -->
-            <div class="w3-container w3-padding-32 end_information">
-                <!-- <p class="w3-left-align" style="color: white"><a href="#">Política de Privacidad</a></p>
-                <p class="w3-left-align" style="color: white">Contactanos</p> -->
-                <table>
+            <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px">
+                <table class="last_part">
                     <tr>
-                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 180px;">Política de Privacidad</td>
-                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 180px;"><a href="footer_files/form.htm">Contactanos</a></td>
-                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;">Rodrigo Micó Pliego</td>
+                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/politics.htm">Política de Privacidad</a></td>
+                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/form.htm">Contactanos</a></td>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;"><a href="footer_files/index.htm"><img src="img/copyright.png" width="20px" height="auto"> Rodrigo Micó Pliego</a></td>
                     </tr>
                 </table>
             </div>
@@ -279,21 +283,60 @@
     <script type="text/javascript">
         // Script to open and close sidebar
         function w3_open() {
-          document.getElementById("mySidebar").style.display = "block";
-          document.getElementById("myOverlay").style.display = "block";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
         }
 
         function w3_close() {
-          document.getElementById("mySidebar").style.display = "none";
-          document.getElementById("myOverlay").style.display = "none";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
         }
 
-        function changeIframes(){
-            var frame = document.getEelemtnById("myFrame");
-            if(frame.src = "this.html")
-                frame.src = "that.html";
-            else
-                frame.src = "this.html";
-        }
+		function ChangeContent(weapon_number){
+            switch(weapon_number){
+                case 1:
+                    document.getElementById("mainFrame").src = "frames/greatsword_frame.htm";
+                break;
+                case 2:
+                    document.getElementById("mainFrame").src = "frames/longsword_frame.htm";
+                break;
+                case 3:
+                    document.getElementById("mainFrame").src = "frames/sns_frame.htm";
+                break;
+                case 4:
+                    document.getElementById("mainFrame").src = "frames/dualblades_frame.htm";
+                break;
+                case 5:
+                    document.getElementById("mainFrame").src = "frames/hammer_frame.htm";
+                break;
+                case 6:
+                    document.getElementById("mainFrame").src = "frames/hh_frame.htm";
+                break;
+                case 7:
+                    document.getElementById("mainFrame").src = "frames/lance_frame.htm";
+                break;
+                case 8:
+                    document.getElementById("mainFrame").src = "frames/gunlance_frame.htm";
+                break;
+                case 9:
+                    document.getElementById("mainFrame").src = "frames/swaxe_frame.htm";
+                break;
+                case 10:
+                    document.getElementById("mainFrame").src = "frames/chblade_frame.htm";
+                break;
+                case 11:
+                    document.getElementById("mainFrame").src = "frames/insectglaive_frame.htm";
+                break;
+                case 12:
+                    document.getElementById("mainFrame").src = "frames/lbg_frame.htm";
+                break;
+                case 13:
+                    document.getElementById("mainFrame").src = "frames/hbg_frame.htm";
+                break;
+                case 14:
+                    document.getElementById("mainFrame").src = "frames/bow_frame.htm";
+                break;
+            }
+		}
     </script>
 </html>
