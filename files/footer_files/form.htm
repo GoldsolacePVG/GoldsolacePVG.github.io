@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <meta name="keywords" content="Capcom, MONSTER HUNTER RISE, mh rise, monsterhunter rise, MONSTER HUNTER WORLD, mh world, monsterhunter world, MONSTER HUNTER GEN, mh gen, monsterhunter gen">
+        <title> Monster Hunter </title>
+        <link rel="icon" type="image/png" href="../img/web_logo.png">
+        <link rel="stylesheet" href="../css/w3_school.css">
+        <style>
+            *{box-sizing: border-box;}
+            @font-face{
+                font-family: MonsterHunter; 
+                src: url('../txt/monster-hunter.ttf');
+            }
+
+            input[type = text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            label{
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+
+            input[type = submit] {
+              background-color: #04AA6D;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+
+            input[type = submit]:hover {
+              background-color: #45a049;
+            }
+
+            
+            @media screen and (max-width: 600px) {
+                .col-25, .col-75, input[type=submit]{width: 100%; margin-top: 0;}
+            }
+
+            body{
+                background-image: url('../img/background_img.jpg'); 
+                background-size: 1920px 1000px; 
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            #borderimg{ 
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(img/mh_border.png) 25 stretch;
+                border-image-width: 25px;
+                box-shadow: 2px 2px;
+            }
+            
+            .container{border-radius: 5px; border: 2px solid #502309; background-color: #d47e4c; padding: 20px; font-family: MonsterHunter; font-size: 20px;}
+            .col-25{float: left; width: 25%; margin-top: 6px;}
+            .col-75{float: left; width: 75%; margin-top: 6px;}
+            .row::after{content: ""; display: table; clear: both;}
+            .end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
+            .responsive{padding: 0 6px; float: left; width: 13.222222%; margin-bottom: 5px; margin-right: 10px; margin-left: 5px;}
+            .logo{width: auto; height: 100px; padding-left: 15px;}
+
+            @media only screen and (max-width:768px){
+                body{width: 90%;}
+                .logo{height: 110px; width: auto; padding-top: 20px;}
+                .responsive{width: 49.99999%; margin: 6px 0;}
+            }
+            @media only screen and (max-width:480px){
+                body{width: 80%;}
+                .logo{height: 110px; width: auto; padding-top: 15px;}
+                .w3-half{width: 100%; align-items: center;}
+                .responsive{width: 100%;}
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- STATIC MENU -->
+        <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: #b95419" id="mySidebar"><br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size: 25px; font-family: MonsterHunter;">CLOSE MENU</a>
+            <a href="../../index.html"><img src="../img/logo_monster_hunter.png" class="logo"></a>
+            <div class="w3-container">
+              <h3 class="w3-padding-64" style="font-family: MonsterHunter; font-size: xxx-large;"><b>Monster<br>Hunter</b></h3>
+            </div>
+            <div class="w3-bar-block">
+              <a href="../1_intro.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Intro       <img src="../img/intro_icon.png" width="auto" height="45px" style="margin-left: 10px; margin-bottom: 5px;"></a> 
+              <a href="../2_games.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Games      <img src="../img/mando.png" width="auto" height="50px"></a> 
+              <a href="../3_monsters.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Monsters       <img src="../img/monsters_icon.png" width="auto" height="70px"></a> 
+              <a href="../4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Weapons <img src="../img/longsword_icon.webp" width="auto" height="50px"></a>
+              <a href="../5_lore.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="../img/lore_icon.webp" width="auto" height="60px"></a>
+            </div>
+        </nav>
+  
+        <!-- TOP MENU -->
+        <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="background-color: #b95419;">
+            <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="../img/logo_monster_hunter.png" width="75px" height="75px"></a>
+            <span style="font-family: MonsterHunter; font-size: 30px;" align="center">MONSTER HUNTER</span>
+        </header>
+
+        <!-- OPENING EFFECT -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- WEB CONTENT -->
+        <div class="w3-main" style="margin-left:340px; margin-right:40px">
+            <!-- Header -->
+            <div class="w3-container" style="margin-top:100px; margin-bottom: 50px;" id="showcase">
+                <h1 class="w3-jumbo" style="font-family: MonsterHunter;"><b>Monster Hunter</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red" style="font-family: MonsterHunter;"><b>Contact</b></h1>
+                <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
+            </div>
+
+            <!-- FORM -->
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Nombre</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Apellidos</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your email..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Footer -->
+            <div class="w3-container w3-padding-32 end_information">
+                <table>
+                    <tr>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 180px;">Política de Privacidad</td>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 180px;"><a href="form.htm">Contactanos</a></td>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;">Rodrigo Micó Pliego</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+           
+    </body>
+    <script type="text/javascript">
+        // Script to open and close sidebar
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function changeIframes(){
+            var frame = document.getEelemtnById("myFrame");
+            if(frame.src = "this.html")
+                frame.src = "that.html";
+            else
+                frame.src = "this.html";
+        }
+    </script>
+</html>

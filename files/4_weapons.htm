@@ -55,25 +55,18 @@
                 box-shadow: 2px 2px;
             }
             
+            .end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
             .responsive{padding: 0 6px; float: left; width: 13.222222%; margin-bottom: 5px; margin-right: 10px; margin-left: 5px;}
             .logo{width: auto; height: 100px; padding-left: 15px;}
-            .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
-            .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
-            .explanation_1{margin-right: 20px;}
-            .explanation_2{margin-left: 20px;}
 
             @media only screen and (max-width:768px){
                 body{width: 90%;}
-                .intro_images{height: auto; width: 100%;}
                 .logo{height: 110px; width: auto; padding-top: 20px;}
-                .history{width: 280px; height: auto;}
                 .responsive{width: 49.99999%; margin: 6px 0;}
             }
             @media only screen and (max-width:480px){
                 body{width: 80%;}
                 .logo{height: 110px; width: auto; padding-top: 15px;}
-                .explanation_1{margin-right: 0%;}
-                .explanation_2{margin-left: 0%;}
                 .w3-half{width: 100%; align-items: center;}
                 .responsive{width: 100%;}
             }
@@ -268,12 +261,18 @@
             <div align="center" style="margin-top: 30px;">
                 <iframe src="http://www.esat.es" width="100%" height="600px" name="main_frame"></iframe>
             </div>
-        </div>
-        <!-- Footer -->
-        <div class="w3-container w3-padding-32" style="margin-top:50px;padding-right:58px">
-            <p class="w3-right">Powered by 
-                <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
-            </p>
+            <!-- Footer -->
+            <div class="w3-container w3-padding-32 end_information">
+                <!-- <p class="w3-left-align" style="color: white"><a href="#">Política de Privacidad</a></p>
+                <p class="w3-left-align" style="color: white">Contactanos</p> -->
+                <table>
+                    <tr>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 180px;">Política de Privacidad</td>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 180px;"><a href="footer_files/form.htm">Contactanos</a></td>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;">Rodrigo Micó Pliego</td>
+                    </tr>
+                </table>
+            </div>
         </div>
            
     </body>
