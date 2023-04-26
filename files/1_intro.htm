@@ -9,6 +9,8 @@
         <title> Monster Hunter </title>
         <link rel="icon" type="image/png" href="img/web_logo.png">
         <link rel="stylesheet" href="css/w3_school.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/own_styles.css">
         <style>
             *{box-sizing: border-box;}
             @font-face{
@@ -38,10 +40,6 @@
                 background-color: #d47e4c;
 			}
 
-            .last_part{width: 100%;}
-            .cell_footer{width: 100px;}
-            .end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
-
             .letter_size{font-size: 25px;}
             .logo{width: auto; height: 100px; padding-left: 15px;}
             .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
@@ -58,9 +56,6 @@
                 .intro_images{height: auto; width: 50%;}
                 .logo{height: 110px; width: auto; padding-top: 20px;}
                 .history{width: 280px; height: auto;}
-                .last_part{width: 104%;}
-                .cell_footer{width: 200px;}
-                .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
             }
             /*Movil*/
             @media only screen and (max-width:480px){
@@ -76,8 +71,6 @@
                 .w3-xxxlarge{font-size: 40px;}
                 .video_exp{width: 300px; height: auto;}
                 .video_container{height: 270px;}
-                .last_part{width: 113%;}
-                .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
             }
         </style>
     </head>
@@ -95,11 +88,18 @@
               <a href="4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Weapons       <img src="img/longsword_icon.webp" width="auto" height="50px"></a> 
               <a href="5_lore.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="img/lore_icon.webp" width="auto" height="60px"></a>
             </div>
+            <div class="social_media">
+                <a href="https://www.facebook.com/rodrigo.mico.507/" target="_blank" title="Facebook"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/goldsolace_yt/" target="_blank" title="Instagram"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/Goldsolace9995" target="_blank" title="Twitter"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/rodrigo-mic%C3%B3-pliego-572760258/" target="_blank" title="Linkedin"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/GoldsolacePVG" target="_blank" title="GitHub"><i class='bx bxl-github' ></i></a>
+            </div>
         </nav>
   
         <!-- TOP MENU -->
-        <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="background-color: #b95419;">
-            <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="img/logo_monster_hunter.png" width="75px" height="75px"></a>
+        <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: #b95419;">
+            <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()"><img src="img/logo_monster_hunter.png" width="75px" height="75px"></a>
             <span style="font-family: MonsterHunter; font-size: 30px;" align="center">MONSTER HUNTER</span>
         </header>
 
@@ -151,14 +151,14 @@
 
            <!-- Footer -->
            <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px">
-            <table class="last_part">
-                <tr>
-                    <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/politics.htm">Política de Privacidad</a></td>
-                    <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/form.htm">Contactanos</a></td>
-                    <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;"><a href="footer_files/index.htm"><img src="img/copyright.png" width="20px" height="auto"> Rodrigo Micó Pliego</a></td>
-                </tr>
-            </table>
-        </div>
+                <table class="last_part">
+                    <tr>
+                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/politics.htm">Política de Privacidad</a></td>
+                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/form.htm">Contactanos</a></td>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;"><a href="footer_files/index.htm"><img src="img/copyright.png" width="20px" height="auto"> Felynes Hunter</a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
     </body>

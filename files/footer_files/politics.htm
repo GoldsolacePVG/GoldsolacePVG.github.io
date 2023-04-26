@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <meta name="keywords" content="Capcom, MONSTER HUNTER RISE, mh rise, monsterhunter rise, MONSTER HUNTER WORLD, mh world, monsterhunter world, MONSTER HUNTER GEN, mh gen, monsterhunter gen">
+        <title> Monster Hunter </title>
+        <link rel="icon" type="image/png" href="../img/web_logo.png">
+        <link rel="stylesheet" href="../css/w3_school.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/own_styles.css">
+        <style>
+            *{box-sizing: border-box;}
+            @font-face{
+                font-family: MonsterHunter; 
+                src: url('../txt/monster-hunter.ttf');
+            }
+
+            input[type = text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            label{
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+
+            input[type = submit] {
+              background-color: #aa0a04;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+              margin-right: 15px;
+            }
+
+            input[type = submit]:hover {
+              background-color: #ec1616;
+            }
+
+            input[type = reset] {
+              background-color: #080808;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+
+            input[type = reset]:hover {
+              background-color: #302d2d;
+            }
+
+            
+            
+            body{
+                background-image: url('../img/background_img.jpg'); 
+                background-size: 1920px 1000px; 
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            
+            .last_part{width: 100%;}
+            .cell_footer{width: 100px;}
+            .end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
+
+            .container{border-radius: 5px; border: 2px solid #502309; background-color: #d47e4c; padding: 20px; font-family: MonsterHunter; font-size: 20px;}
+            .col-25{float: left; width: 25%; margin-top: 6px;}
+            .col-75{float: left; width: 75%; margin-top: 6px;}
+            .row::after{content: ""; display: table; clear: both;}
+            .responsive{padding: 0 6px; float: left; width: 13.222222%; margin-bottom: 5px; margin-right: 10px; margin-left: 5px;}
+            .logo{width: auto; height: 100px; padding-left: 15px;}
+
+            @media only screen and (max-width:768px){
+                body{width: 90%;}
+                .logo{height: 110px; width: auto; padding-top: 20px;}
+                .responsive{width: 49.99999%; margin: 6px 0;}
+                .container{margin-left: 10%;}
+                .last_part{width: 104%;}
+                .cell_footer{width: 200px;}
+                .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
+            }
+            @media only screen and (max-width:480px){
+                body{width: 80%;}
+                .logo{height: 110px; width: auto; padding-top: 15px;}
+                /* .last_part{max-width: 100%;} */
+                .responsive{width: 100%;}
+                .container{margin-left: 10%; margin-right: -13%;}
+                .last_part{width: 113%;}
+                .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
+                .col-25, .col-75, input[type=submit], input[type=reset]{width: 100%; margin-top: 0;}
+                input[type=submit]{margin-right: 0px; margin-top: 10px;}
+            }
+            
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- STATIC MENU -->
+        <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: #b95419" id="mySidebar"><br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size: 25px; font-family: MonsterHunter;">CLOSE MENU</a>
+            <a href="../../index.html"><img src="../img/logo_monster_hunter.png" class="logo"></a>
+            <div class="w3-container">
+              <h3 class="w3-padding-64" style="font-family: MonsterHunter; font-size: xxx-large;"><b>Monster<br>Hunter</b></h3>
+            </div>
+            <div class="w3-bar-block">
+              <a href="../1_intro.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Intro       <img src="../img/intro_icon.png" width="auto" height="45px" style="margin-left: 10px; margin-bottom: 5px;"></a> 
+              <a href="../2_games.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Games      <img src="../img/mando.png" width="auto" height="50px"></a> 
+              <a href="../3_monsters.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Monsters       <img src="../img/monsters_icon.png" width="auto" height="70px"></a> 
+              <a href="../4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Weapons <img src="../img/longsword_icon.webp" width="auto" height="50px"></a>
+              <a href="../5_lore.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="../img/lore_icon.webp" width="auto" height="60px"></a>
+            </div>
+            <div class="social_media">
+                <a href="https://www.facebook.com/rodrigo.mico.507/" target="_blank" title="Facebook"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/goldsolace_yt/" target="_blank" title="Instagram"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/Goldsolace9995" target="_blank" title="Twitter"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/rodrigo-mic%C3%B3-pliego-572760258/" target="_blank" title="Linkedin"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/GoldsolacePVG" target="_blank" title="GitHub"><i class='bx bxl-github' ></i></a>
+            </div>
+        </nav>
+  
+        <!-- TOP MENU -->
+        <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="background-color: #b95419;">
+            <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="../img/logo_monster_hunter.png" width="75px" height="75px"></a>
+            <span style="font-family: MonsterHunter; font-size: 30px;" align="center">MONSTER HUNTER</span>
+        </header>
+
+        <!-- OPENING EFFECT -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- WEB CONTENT -->
+        <div class="w3-main" style="margin-left:340px; margin-right:40px">
+            <!-- Header -->
+            <div class="w3-container" style="margin-top:100px; margin-bottom: 50px;" id="showcase">
+                <h1 class="w3-jumbo" style="font-family: MonsterHunter;"><b>Monster Hunter</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red" style="font-family: MonsterHunter;"><b>Privacy Policies</b></h1>
+                <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
+            </div>
+
+            <!-- FORM -->
+            <div class="container">
+                <p><strong>POLÍTICA DE PRIVACIDAD</strong></p>
+                <p>El presente Política de Privacidad establece los términos en que FelynesHunter 
+                    usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está 
+                    comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con 
+                    la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. 
+                    Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos 
+                    revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
+                <p><strong>Información que es recogida</strong></p>
+                <p>Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,&nbsp; información de contacto como&nbsp; su dirección de correo 
+                    electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido 
+                    o realizar una entrega o facturación.</p>
+                <p><strong>Uso de la información recogida</strong></p>
+                <p>Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro 
+                    de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios. &nbsp;Es posible que sean enviados correos electrónicos 
+                    periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante 
+                    para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser 
+                    cancelados en cualquier momento.</p>
+                <p>FelynesHunter está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los 
+                    actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.</p>
+                <p><strong>Cookies</strong></p>
+                <p>Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se 
+                    crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra 
+                    función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web.</p>
+                <p>Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para 
+                    análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. 
+                    Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos 
+                    de que usted así lo quiera y la proporcione directamente <a href="" target="_blank"></a>. Usted puede aceptar o negar el uso de cookies, sin embargo la 
+                    mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su 
+                    ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios.</p>
+                <p><strong>Enlaces a Terceros</strong></p>
+                <p>Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, 
+                    ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los 
+                    <a href="https://plantillaterminosycondicionestiendaonline.com/" target="_blank">términos o privacidad</a> ni de la protección de sus datos en esos otros sitios 
+                    terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.</p>
+                    <p><strong>Control de su información personal</strong></p>
+                    <p>En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web.&nbsp; Cada vez que se 
+                        le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico. &nbsp;En caso 
+                        de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento.</p>
+                    <p>Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden 
+                        judicial.</p>
+                    <p>FelynesHunter Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
+                    <p>Esta politica de privacidad se han generado en <a href="https://politicadeprivacidadplantilla.com/" target="_blank">politicadeprivacidadplantilla.com</a>.<br></p>
+            </div>
+
+            <!-- Footer -->
+            <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px">
+                <table class="last_part">
+                    <tr>
+                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="politics.htm">Política de Privacidad</a></td>
+                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="form.htm">Contactanos</a></td>
+                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;"><a href="index.htm"><img src="../img/copyright.png" width="20px" height="auto"> Felynes Hunter</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+           
+    </body>
+    <script type="text/javascript">
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+</html>
