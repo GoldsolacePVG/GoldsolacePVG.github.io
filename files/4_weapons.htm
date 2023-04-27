@@ -56,24 +56,15 @@
                 border-image-width: 25px;
                 box-shadow: 2px 2px;
             }
-            
-            .last_part{width: 100%;}
-            .cell_footer{width: 100px;}
-            .end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
-            .responsive{padding: 0 6px; float: left; width: 13.222222%; margin-bottom: 5px; margin-right: 10px; margin-left: 5px;}
-            .logo{width: auto; height: 100px; padding-left: 15px;}
 
             @media only screen and (min-width:480px) and (max-width:768px){
-                body{width: 90%;}
-                .logo{height: 110px; width: auto; padding-top: 20px;}
                 .responsive{width: 49.99999%; margin: 6px 0;}
                 .last_part{width: 104%;}
                 .cell_footer{width: 200px;}
                 .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
+                .w3-padding-64{padding-top: 10px; padding-bottom: 10px;}
             }
             @media only screen and (max-width:480px){
-                body{width: 80%;}
-                .logo{height: 110px; width: auto; padding-top: 15px;}
                 .responsive{width: 100%;}
                 .last_part{width: 113%;}
                 .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
@@ -128,7 +119,7 @@
             </div>
 
             <!-- Gallery -->
-            <div>
+            <div class="container">
                 <!-- GreatSword -->
                 <a href="#weapon_info" onclick="ChangeContent(1)">
                     <div class="responsive" id="borderimg">
@@ -273,14 +264,14 @@
             </div>
 
             <a name="weapon_info"></a>
-            <div align="center" style="margin-top: 30px;">
+            <div align="center" style="margin-top: 30px;" class="container">
                 <iframe id="mainFrame" src="http://www.esat.es" width="100%" height="600px" name="main_frame"></iframe>
             </div>
             <!-- Footer -->
             <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px">
                 <table class="last_part">
                     <tr>
-                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/politics.htm">Política de Privacidad</a></td>
+                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/form.htm">Política de Privacidad</a></td>
                         <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="footer_files/form.htm">Contactanos</a></td>
                         <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;"><a href="footer_files/index.htm"><img src="img/copyright.png" width="20px" height="auto"> Felynes Hunter</a></td>
                     </tr>
