@@ -8,6 +8,7 @@
         <meta name="keywords" content="Capcom, MONSTER HUNTER RISE, mh rise, monsterhunter rise, MONSTER HUNTER WORLD, mh world, monsterhunter world, MONSTER HUNTER GEN, mh gen, monsterhunter gen">
         <title> Monster Hunter </title>
         <link rel="icon" type="image/png" href="files/img/web_logo.png">
+        <link rel="stylesheet" href="files/css/main_page.css">
         <style>
             /*Elementos Neutralidad*/
             *{box-sizing: border-box;}
@@ -21,63 +22,53 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
-            /* body{
-                
-            } */
             img{
                 width: auto; 
-                height: 250px; 
+                height: 450px; 
                 filter: grayscale(100%); 
                 transition: filter 0.3s ease-in-out;
+                vertical-align: middle;
             }
             img:hover{
                 filter: grayscale(0%);
             }
-
-            /*Elementos Estructurales*/
-            /*Estilos Fuentes*/
-            /*Clases*/
-            .perfil{
-                width: 100%; 
-                height: 100%;
-                padding: 75px;
-                /* float: left; */
-                background-image: url('files/img/pergamino.png'); 
-                background-size: cover; 
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                /* background-position-x: 200%; 
-                background-position-y: 50%;  */
-                background-position: center;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center; 
-                justify-content: center; 
-                padding: 0;
-            }
-		    .perfil img{
-                max-width: 100%; 
-                max-height: 100%; 
-                margin: -0.3%; 
-                object-position:center;
-                /* float: left; */
-            }
-
-            @media only screen and (max-width:768px){}
-            @media only screen and (max-width:480px){
-                body{background-image: none;}
-                img{height: 230px; width: auto;}
-                .perfil{float: inline-start;}
-            }
         </style>
     </head>
     <body>
-        <div class="perfil">       
-            <a href="files/1_intro.htm"><img src="files/img/Intro_menu.jpg" alt="" title="Go to introduction"></a>
-            <a href="files/2_games.htm"><img src="files/img/Games_menu.jpg" alt="" title="Go to games"></a>
-            <a href="files/3_monsters.htm"><img src="files/img/Monster_menu.jpg" alt="" title="Go to monsters"></a>
-            <a href="files/4_weapons.htm"><img src="files/img/Weap_menu.jpg" alt="" title="Go to weapons"></a>
-            <a href="files/5_lore.htm"><img src="files/img/Lore_menu.jpg" alt="" title="Go to lore"></a>
+        <div class="slideshow-container">       
+            <div class="mySlides fade"><a href="files/1_intro.htm"><img src="files/img/Intro_menu.jpg" alt="" title="Go to introduction"></a></div>
+            <div class="mySlides fade"><a href="files/2_games.htm"><img src="files/img/Games_menu.jpg" alt="" title="Go to games"></a></div>
+            <div class="mySlides fade"><a href="files/3_monsters.htm"><img src="files/img/Monster_menu.jpg" alt="" title="Go to monsters"></a></div>
+            <div class="mySlides fade"><a href="files/4_weapons.htm"><img src="files/img/Weap_menu.jpg" alt="" title="Go to weapons"></a></div>
+            <div class="mySlides fade"><a href="files/5_lore.htm"><img src="files/img/Lore_menu.jpg" alt="" title="Go to lore"></a></div>
         </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
     </body>
 </html>
