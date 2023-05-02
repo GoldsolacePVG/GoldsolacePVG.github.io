@@ -9,6 +9,7 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
+// iFrame Change
 function ChangeContent(weapon_number) {
   switch(weapon_number){
     case 1:
@@ -54,4 +55,28 @@ function ChangeContent(weapon_number) {
       document.getElementById("mainFrame").src = "frames/bow_frame.htm";
     break;
   }
+}
+
+// MAIN MENU SCRIPT
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }

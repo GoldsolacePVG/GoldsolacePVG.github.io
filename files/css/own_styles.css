@@ -80,6 +80,12 @@
     border-image-width: 25px;
     box-shadow: 2px 2px;
 }
+#borderindeximg {
+    border: 10px solid transparent;
+    padding: 5px;
+    border-image: url(../img/mh_border.png) 25 stretch;
+    border-image-width: 25px;
+}
 .letter_size{font-size: 25px;}
 .logo{width: auto; height: 100px; padding-left: 15px;}
 .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
