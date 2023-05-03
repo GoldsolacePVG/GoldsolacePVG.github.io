@@ -18,28 +18,25 @@
                 src: url('files/txt/monster-hunter.ttf');
             }
             html{
-                background-image: url('files/img/background_img.jpg'); 
+                /* background-image: url('files/img/background_img.jpg');  */
                 background-size: 1920px 1000px; 
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
-            img{
-                width: auto; 
-                height: 450px; 
-                filter: grayscale(100%); 
-                transition: filter 0.3s ease-in-out;
-                vertical-align: middle;
-            }
-            img:hover{
-                filter: grayscale(0%);
+            body{
+                background-image: url('files/img/background_img.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
             }
         </style>
+        <script src="files/java/own_functions.js"></script>
     </head>
     <body>
         <div class="mainTitle">
             <h1>Bienvenid@ al mundo de</h1>
-            <hr align="left" style="width: 60%; height: 1%; border:5px solid rgb(54, 14, 3); border-radius: 50px 50px 50px 50px;">
+            <img src="files/img/mh3u.webp" id="main_logo" alt="Logo">
         </div>
+        <hr align="left">
         <div class="slideshow-container">       
             <div class="mySlides fade"><a href="files/1_intro.htm"><img src="files/img/Intro_menu.jpg" alt="Rath" title="Go to introduction" id="borderindeximg"></a></div>
             <div class="mySlides fade"><a href="files/2_games.htm"><img src="files/img/Games_menu.jpg" alt="Fel" title="Go to games" id="borderindeximg"></a></div>
