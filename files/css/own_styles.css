@@ -1,3 +1,6 @@
+body{cursor: url(../img/cursor.webp), auto;}
+a{cursor: url(../img/cursor_hover.webp), auto;}
+
 /*SOCIAL MEDIA LOGOS*/
 .social_media{
     display: flex;
@@ -86,6 +89,8 @@
     border-image: url(../img/mh_border.png) 25 stretch;
     border-image-width: 25px;
 }
+
+.menu_test{cursor: url(img/cursor_hover.webp)}
 .letter_size{font-size: 25px;}
 .logo{width: auto; height: 100px; padding-left: 15px;}
 .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}

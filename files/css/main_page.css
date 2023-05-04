@@ -50,7 +50,7 @@ hr{
 }
 
 .prev, .next {
-  cursor: pointer;
+  cursor: url(../img/cursor_hover.webp), auto;
   position: absolute;
   top: 63%;
   width: 40px;
