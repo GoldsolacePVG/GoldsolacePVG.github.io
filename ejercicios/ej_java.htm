@@ -1,0 +1,81 @@
+<html>
+    <title>Ejercicio JavaScript</title>
+    <head>
+        <style></style>
+        <script>
+            function mostrarfecha() {
+                var actual_date = new Date();
+                var day = actual_date.getDate();
+                var month = actual_date.getMonth();
+                var year = actual_date.getFullYear();
+                var months = new Array();
+
+                months[0] = "Enero";
+                months[1] = "Febrero";
+                months[2] = "Marzo";
+                months[3] = "Abril";
+                months[4] = "Mayo";
+                months[5] = "Junio";
+                months[6] = "Julio";
+                months[7] = "Agosto";
+                months[8] = "Septiembre";
+                months[9] = "Octubre";
+                months[10] = "Noviembre";
+                months[11] = "Diciembre";
+
+                document.write(day + " de " + months[month] + " de " + year);
+            }
+            function mostrarimagenes(){
+                var i = Math.round(10 * Math.random());
+                var fotos = new Array(10);
+
+                fotos[0] = '../files/img/fondos_videojuegos/fondo1.jpg';
+                fotos[1] = '../files/img/fondos_videojuegos/fondo2.jpg';
+                fotos[2] = '../files/img/fondos_videojuegos/fondo3.jpg';
+                fotos[3] = '../files/img/fondos_videojuegos/fondo4.jpg';
+                fotos[4] = '../files/img/fondos_videojuegos/fondo5.jpg';
+                fotos[5] = '../files/img/fondos_videojuegos/fondo6.jpg';
+                fotos[6] = '../files/img/fondos_videojuegos/fondo7.jpg';
+                fotos[7] = '../files/img/fondos_videojuegos/fondo8.jpg';
+                fotos[8] = '../files/img/fondos_videojuegos/fondo9.jpg';
+                fotos[9] = '../files/img/fondos_videojuegos/fondo10.jpg';
+
+                document.write("<img src='" + fotos[i] + "' width='500px' height='auto' alt=''>");
+            }
+            function OpenWindowImgOnly(){
+                var ventana = window.open("", "", "width=800px, height=500px, top=200px, left=200px");
+                ventana.document.write("<img src='../files/img/fondos_videojuegos/fondo6.jpg' alt='' width='100%' height='auto'>");
+            }
+            function OpenWindowRandomImg(){
+                var ventana = window.open("", "", "width=800px, height=500px, top=200px, left=200px");
+                var i = Math.round(10 * Math.random());
+                var fotos = new Array(10);
+
+                fotos[0] = '../files/img/fondos_videojuegos/fondo1.jpg';
+                fotos[1] = '../files/img/fondos_videojuegos/fondo2.jpg';
+                fotos[2] = '../files/img/fondos_videojuegos/fondo3.jpg';
+                fotos[3] = '../files/img/fondos_videojuegos/fondo4.jpg';
+                fotos[4] = '../files/img/fondos_videojuegos/fondo5.jpg';
+                fotos[5] = '../files/img/fondos_videojuegos/fondo6.jpg';
+                fotos[6] = '../files/img/fondos_videojuegos/fondo7.jpg';
+                fotos[7] = '../files/img/fondos_videojuegos/fondo8.jpg';
+                fotos[8] = '../files/img/fondos_videojuegos/fondo9.jpg';
+                fotos[9] = '../files/img/fondos_videojuegos/fondo10.jpg';
+
+                ventana.document.write("<img src='" + fotos[i] + "' alt='' width='100%' height='auto'>");
+            }
+        </script>
+    </head>
+    <body>
+        <p>MOSTRAMOS LA FECHA</p>
+        <script>mostrarfecha();</script>
+        <br><br>
+        <p>MOSTRAMOS UNA IMAGEN ALEATORIA</p>
+        <script>mostrarimagenes();</script>
+        <br><br>
+        <form>
+            <input type="button" name="abrir" id="abrir" value="Abrir Imagen Fija" onclick="OpenWindowImgOnly()">
+            <input type="button" name="abrir" id="abrir" value="Abrir Imagen Random" onclick="OpenWindowRandomImg()">
+        </form>
+    </body>
+</html>
