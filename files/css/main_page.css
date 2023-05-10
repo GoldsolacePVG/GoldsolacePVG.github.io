@@ -7,8 +7,7 @@ hr{
   border-radius: 50px 50px 50px 50px;
 }
 
-.mainTitle img{
-  /* width: 250px; */
+.logoPresentation{
   width: auto;
   height: 200px;
   position: absolute;
