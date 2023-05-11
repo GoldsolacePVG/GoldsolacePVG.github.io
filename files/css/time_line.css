@@ -3,6 +3,20 @@ h4{
   font-size: 22px;
 }
 
+.TimeImg{
+  width: auto;
+  height: 300px;
+  border-radius: 3%;
+  border: 3px solid #421e09;
+}
+
+.TimeImg2{
+  width: auto;
+  height: 250px;
+  border-radius: 3%;
+  border: 3px solid #421e09;
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
