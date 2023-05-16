@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/w3_school.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="css/own_styles.css">
+        <link rel="stylesheet" href="css/monsters.css">
         <style>
             *{box-sizing: border-box;}
             @font-face{
@@ -40,27 +41,30 @@
                 background-color: #d47e4c;
 			}
 
-            .logo{width: auto; height: 100px; padding-left: 15px;}
-            .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
-            .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
-            .explanation_1{margin-right: 20px;}
-            .explanation_2{margin-left: 20px;}
-
             @media only screen and (min-width:480px) and (max-width:768px){
-                body{width: 90%;}
-                .intro_images{height: auto; width: 100%;}
-                .logo{height: 110px; width: auto; padding-top: 20px;}
-                .history{width: 280px; height: auto;}
+                .responsive{width: 49.99999%; margin: 6px 0;}
+                .last_part{width: 104%;}
+                .cell_footer{width: 200px;}
+                .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
                 .w3-padding-64{padding-top: 10px; padding-bottom: 10px;}
             }
             @media only screen and (max-width:480px){
-                body{width: 80%;}
-                .logo{height: 110px; width: auto; padding-top: 15px;}
-                .explanation_1{margin-right: 0%;}
-                .explanation_2{margin-left: 0%;}
-                .w3-half{width: 100%; align-items: center;}
+                .responsive{width: 100%;}
+                .last_part{width: 113%;}
+                .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
             }
         </style>
+        <script>
+            function ChangeBackground(){
+                document.getElementById("Carapaceon").style = "#00FFFF";
+            }
+        </script>
     </head>
     <body>
         <!-- STATIC MENU -->
@@ -103,7 +107,51 @@
                 <h1 class="w3-xxxlarge w3-text-red" style="font-family: MonsterHunter;"><b>Monstruos</b></h1>
                 <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
             </div>
+                <script>ChangeBakcground();</script>
+                <div class="container1">
+                    <img src="img/Neopteron.jpg_large" alt="Neopteron" class="image">
+                    <div class="overlay">
+                        <div class="text"><b>NEOPTERON</b><br><br>Equivalentes a los insectos, estos monstruos invertebrados poseen una gran diversidad de formas y tamaños y 
+                            prosperan en todos los entornos. Algunos habitan en enjambres o colonias liderados por una reina, mientras que otros son 
+                            solitarios o viven en grupos reducidos. Algunos vuelan y otros no, su alimentación es también muy variada y pueden llegar a 
+                            ser hábiles depredadores.</div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <img src="img/carapaceon.webp" alt="Carapaceon" class="image">
+                    <div class="overlay" id="Carapaceon">
+                        <div class="text"><b>CARAPACEON</b><br><br>Monstruos similares a los crustáceos, cuya apariencia se recuerda a la de cangrejos y escorpiones. 
+                            Habitan en muchos entornos y están protegidos por un rígido exoesqueleto, aunque algunos también llevan una concha para aumentar su defensa. 
+                            Todos ellos tienen patas delanteras como pinzas de diferentes formas para atacar y defenderse.</div>
+                    </div>
+                </div>
+                <div class="container1">
+                    <img src="img/temnoceran.webp" alt="Temnoceran" class="image">
+                    <div class="overlay">
+                        <div class="text"><b>TEMNOCERAN</b><br><br>Monstruos semejantes a arácnidos, aunque poseen seis patas como los Neopteron y los Carapaceon. 
+                            Al igual que las arañas, poseen varios ojos, están armados con quelíceros venenosos, y son capaces de utilizar seda para hacer sus nidos y 
+                            envolver a sus presas. Son cazadores eficaces capaces de acechar a sus presas con diversas estrategias.</div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <img src="img/bestia_colm.webp" alt="Bestia de Colmillos" class="image">
+                    <div class="overlay">
+                        <div class="text"><b>BESTIA DE COLMILLOS</b><br><br>Este grupo que abarca a los monstruos mamíferos, caracterizados por poseer sangre caliente y piel 
+                            cubierta de pelaje en la mayoría de casos. Aunque en general no son tan fuertes como los wyverns, presentan una inteligencia mayor y pueden llegar 
+                            a ser muy astutos. Abundan sobre todo en zonas de bosque y regiones frías. Anteriormente eran llamados Primatius o Pelagus</div>
+                    </div>
+                </div>
+                <div class="container1">
+                    <img src="img/wyv_col.webp" alt="Wyverns de Colmillos" class="image">
+                    <div class="overlay">
+                        <div class="text"><b>WYVERNS DE COLMILLOS</b><br><br>Monstruos caracterizados por su aspecto reptiliano y postura cuadrúpeda. Todos ellos son terrestres y 
+                            pueden desplazarse por su entorno con gran agilidad. Algunos recurren a su velocidad para defenderse o utilizan sus poderosas extremidades para asestar 
+                            golpes, mientras que otros viven en grupos liderados por un líder para cazar.</div>
+                    </div>
+                </div>
 
+            <div class="clearfix"></div>
+            
             <!-- Footer -->
             <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px">
                 <table class="last_part">

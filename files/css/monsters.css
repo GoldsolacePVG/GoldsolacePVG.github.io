@@ -1,6 +1,59 @@
-.img1 { background-image: url("img_snow.jpg"); }
-.img2 { background-image: url("img_girl.jpg"); }
-.img3 { background-image: url("img_lights.jpg"); }
-.img4 { background-image: url("img_nature.jpg"); }
-.img5 { background-image: url("img_forest.jpg"); }
-.img6 { background-image: url("img_woods.jpg"); }
+@font-face{
+    font-family: special_type; 
+    src: url('../txt/zelda-type.otf');
+}
+
+.container1{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.container2{
+    position: relative;
+    float: right;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.image {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 3px solid black;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  background-color: #00ba19;
+  overflow: hidden;
+  width: 80%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.container2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+    color: black;
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate( -50%, -50%);
+    font-family: special_type;
+}
