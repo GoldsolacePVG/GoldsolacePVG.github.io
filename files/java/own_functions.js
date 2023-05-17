@@ -66,6 +66,5 @@ function ChangeContent(weapon_number){
   }
 }
 
-function ChangeBackground(){
-  document.getElementById("Carapaceon").style.backgroundColor = "#10A0E8";
+function ChangeTheme(){
 }

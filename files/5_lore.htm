@@ -39,26 +39,45 @@
                 margin-right: 10px;
                 background-color: #d47e4c;
 			}
-
+            div.gallery img{
+                width: auto;
+                height: 75px;
+            }
+            div.desc{
+                padding: 10px;
+                text-align: center;
+                font-family: MonsterHunter;
+                font-size: 22px;
+            }
+            .responsive{padding: 0 6px;float: left;width: 24.99999%;}
             .logo{width: auto; height: 100px; padding-left: 15px;}
             .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
             .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
             .explanation_1{margin-right: 20px;}
             .explanation_2{margin-left: 20px;}
 
+            .clearfix:after {content: "";display: table;clear: both;}
             @media only screen and (min-width:480px) and (max-width:768px){
-                body{width: 90%;}
-                .intro_images{height: auto; width: 100%;}
-                .logo{height: 110px; width: auto; padding-top: 20px;}
+                .letter_size{font-size: 20px;}
+                .information{margin-left: 60px; margin-right: -15px;}
+                .intro_images{height: auto; width: 50%;}
                 .history{width: 280px; height: auto;}
                 .w3-padding-64{padding-top: 10px; padding-bottom: 10px;}
+                .responsive {width: 49.99999%;margin: 6px 0;}            
             }
+            /*Movil*/
             @media only screen and (max-width:480px){
-                body{width: 80%;}
-                .logo{height: 110px; width: auto; padding-top: 15px;}
+                .letter_size{font-size: 17px;}
+                .information{margin-left: 50px; margin-right: -45px;}
+                .history{float: right; width: 97%;}
+                .intro_images{height: 30%; width: auto;}
                 .explanation_1{margin-right: 0%;}
                 .explanation_2{margin-left: 0%;}
                 .w3-half{width: 100%; align-items: center;}
+                .w3-xxxlarge{font-size: 40px;}
+                .video_exp{width: 300px; height: auto;}
+                .video_container{height: 270px;}
+                .responsive {width: 100%;}
             }
         </style>
     </head>
@@ -102,6 +121,79 @@
                 <h1 class="w3-jumbo" style="font-family: MonsterHunter;"><b>Monster Hunter</b></h1>
                 <h1 class="w3-xxxlarge w3-text-red" style="font-family: MonsterHunter;"><b>Lore</b></h1>
                 <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
+            </div>
+
+            <!-- TEXT -->
+            <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
+                <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>Historia del mundo</b></h1>
+                <img src="img/first_mh.jpg" alt="MH" class="intro_images">
+                <p style="font-family: MonsterHunter;" class="letter_size"> En cada juego de la saga, los jugadores asumen el papel de un cazador novato que se une a la 
+                    Comisión de Investigación. A medida que avanzan en el juego, los cazadores deben enfrentarse a monstruos cada vez más poderosos y peligrosos. También 
+                    descubren antiguos secretos y misterios relacionados con la historia y la ecología de los monstruos.<br>Si el jugador decide comprar todos los juegos y
+                    realizar una investigación sobre la trama que hay detras de todo el juego descubrirá una historia mas oscura de lo que el juego aparenta.<br><br>
+                    La historia de Monster Hunter gira en torno a un evento conocido como "La Gran Guerra". Este evento fué un conflicto bélico provocado por las cacerías 
+                    injustificadas de wyverns en masa. Estas cacerías tenían el objetivo de crear máquinas y estructuras para favorecer el avance tecnológico de la sociedad
+                    humanoide, la cual estaba conformada por los humanos, los wyverianos y los humanos acuáticos. Todos estos avances supusieron un cambio en la propia naturaleza,
+                    haciendo que los monstruos se revelasen contra los humanoides, y asi comenzando la Gran Guerra.</p>
+            </div>
+            <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
+                <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>La Leyenda de los Dragones Negros</b></h1>
+                <p style="font-family: MonsterHunter;" class="letter_size"> Durante la Gran Guerra, los humanoides llevaron la ventaja debido a la inteligencia de los mismos a la 
+                    hora de atacar a los wyverns, pero eso un dia cambiaría. Un poderoso dragón llamado Fatalis desencadenó una catástrofe que devastó muchas tierras y cambió 
+                    drásticamente el equilibrio de la guerra, porque Fatalis atacó a la humanidad junto una serie de monstruos que pasarian a la historia como "Los Dragones Negros". 
+                    Estos eran conocidos por su gran poder a la hora pelear, ya que casi ningún invento humanoide era capaz de hacerles frente, los nombres de estos serían:</p>
+
+                <ul style="font-family: MonsterHunter;" class="letter_size">
+                    <li>Fatalis Blanco</li>
+                    <li>Fatalis Carmesí</li>
+                    <li>Fatalis Llameante</li>
+                    <li>Fatalis Negro</li>
+                    <li>Alatreon</li>
+                    <li>Miralis</li>
+                    <li>Disufiroa</li>
+                    <li>Mephistophelin</li>
+                </ul>
+                
+                <p style="font-family: MonsterHunter;" class="letter_size">Gracias a la actuación del Fatalis Blanco se consiguió que la humanidad recapacitase y crease el órgano conocido 
+                    como "Gremio de cazadores", una organización que se encargaría de preservar la naturaleza y de controlar la cacería de monstruos para poder evitar una nueva guerra en el futuro.
+                    Desde entonces, los cazadores han estado luchando para proteger a la humanidad y evitar la destrucción de la naturaleza.</p>
+                    <div class="responsive">
+                      <div class="gallery">
+                        <a target="_blank" href="img_5terre.jpg">
+                          <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                        <div class="desc">Fatalis Blanco</div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="responsive">
+                      <div class="gallery">
+                        <a target="_blank" href="img_forest.jpg">
+                          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+                        </a>
+                        <div class="desc">Fatalis Carmesí</div>
+                      </div>
+                    </div>
+                    
+                    <div class="responsive">
+                      <div class="gallery">
+                        <a target="_blank" href="img_lights.jpg">
+                          <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">Fatalis Llameante</div>
+                      </div>
+                    </div>
+                    
+                    <div class="responsive">
+                      <div class="gallery">
+                        <a target="_blank" href="img_mountains.jpg">
+                          <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+                        </a>
+                        <div class="desc">Fatalis Negro</div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
             </div>
 
             <!-- Footer -->
