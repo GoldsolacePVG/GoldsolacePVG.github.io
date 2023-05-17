@@ -65,6 +65,3 @@ function ChangeContent(weapon_number){
     break;
   }
 }
-
-function ChangeTheme(){
-}

@@ -13,9 +13,26 @@
         <style>
             html,body,h1,h3,h4,h5,h6,td {font-family: "Roboto", sans-serif}
             @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            .theme{
+              position: absolute;
+              height: 100px;
+              width: auto;
+              left: 94%;
+            }
+
+            :root{
+              --back-color: #2b2b2b;
+              --letter-color: #ffffff;
+              --back2-color: #1a1a1a;
+            }
+            .light_mode{
+              --back-color: #e4e4e4;
+              --letter-color: #212121;
+              --back2-color: #ffffff;
+            }
         </style>
     </head>
-    <body style="background-color: rgb(42, 42, 43);">
+    <body style="background-color: var(--back-color);">
 
         <!-- Page Container -->
         <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -26,7 +43,7 @@
             <!-- Left Column -->
             <div class="w3-third">
             
-              <div class="w3-card-4" style="background-color: rgb(26, 26, 26); color: white;">
+              <div class="w3-card-4" style="background-color: var(--back2-color); color: var(--letter-color);">
                 <div class="w3-display-container">
                   <img src="../img/gold_avatar.jpg" style="width: 100%; opacity: 85%;" alt="Avatar">
                   <div class="w3-display-bottomleft w3-container w3-text-black">
@@ -87,9 +104,10 @@
             </div>
 
             <!-- Right Column -->
+            <img src="../img/sun.png" alt="Theme type" class="theme" id="theme">
             <div class="w3-twothird">
             
-              <div class="w3-container w3-card w3-margin-bottom" style="background-color: rgb(26, 26, 26); color: white;">
+              <div class="w3-container w3-card w3-margin-bottom" style="background-color: var(--back2-color); color: var(--letter-color);">
                 <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color: rgb(255, 174, 0);"></i>Best Projects</h2>
                 <div class="w3-container">
                   <h5 class="w3-opacity"><b>ASTEROIDS Game Development</b></h5>
@@ -122,7 +140,7 @@
                 </div>
                </div>
 
-              <div class="w3-container w3-card" style="background-color: rgb(26, 26, 26); color: white;">
+              <div class="w3-container w3-card" style="background-color: var(--back2-color); color: var(--letter-color);">
                 <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge" style="color: rgb(255, 174, 0);"></i>Education</h2>
                 <div class="w3-container">
                   <h5 class="w3-opacity"><b>ESAT</b></h5>
@@ -167,6 +185,19 @@
                 </tr>
             </table>
         </footer>
+        <script>
 
-    </body>
+          var icon = document.getElementById("theme");
+
+          icon.onclick = function(){
+            document.body.classList.toggle("light_mode");
+            if(document.body.classList.contains("light_mode")){
+              icon.src = "../img/moon.png";
+            }else{
+              icon.src = "../img/sun.png";
+            }
+          }
+          
+        </script>
+    </body> 
 </html>
