@@ -3,25 +3,29 @@
     src: url('../txt/zelda-type.otf');
 }
 
+.monster-container{
+  margin-left: 30px;
+}
+
 .container1{
-    position: relative;
-    float: left;
-    width: 50%;
-    margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 40%;
+  margin-bottom: 50px;
 }
 
 .container2{
-    position: relative;
-    float: right;
-    width: 50%;
-    margin-bottom: 50px;
+  position: relative;
+  float: right;
+  width: 50%;
+  margin-bottom: 50px;
 }
 
 .image {
-    display: block;
-    width: 80%;
-    height: auto;
-    border: 3px solid black;
+  display: block;
+  width: 400px;
+  height: auto;
+  border: 3px solid black;
 }
 
 .overlay {
@@ -31,7 +35,7 @@
   right: 0;
   background-color: #00ba19;
   overflow: hidden;
-  width: 80%;
+  width: 400px;
   height: 0;
   transition: .5s ease;
 }
@@ -62,8 +66,14 @@
   .text{font-size: 15px;}
 }
 
-@media only screen and (min-width:480px) and (max-width:768px){}
+@media only screen and (min-width:480px) and (max-width:768px){
+  .text{font-size: 11px;}
+  .monster-container{margin-left: 60px;}
+  .image{width: 300px;}
+  .overlay{width: 300px;}
+}
 
 @media only screen and (max-width: 480px){
   .text{font-size: 5px;}
+  .monster-container{display: block;}
 }

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/w3_school.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="css/own_styles.css">
+        <link rel="stylesheet" href="css/black_dragon.css">
         <style>
             *{box-sizing: border-box;}
             @font-face{
@@ -23,25 +24,25 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
-            article {
-				height:460px;
-				width:40%;	
-				float:left;
+              article {
+				        height:460px;
+				        width:40%;	
+				        float:left;
                 margin-left: 10px;
                 margin-right: 30px;
                 background-color: #d47e4c;
-			}
-			aside {
-				height:460px;
-				width:40%;
-				float:left;
+			        }
+			        aside {
+			        	height:460px;
+			        	width:40%;
+			        	float:left;
                 margin-left: 30px;
                 margin-right: 10px;
                 background-color: #d47e4c;
-			}
+			        }
             div.gallery img{
                 width: auto;
-                height: 75px;
+                height: 100px;
             }
             div.desc{
                 padding: 10px;
@@ -51,7 +52,7 @@
             }
             .responsive{padding: 0 6px;float: left;width: 24.99999%;}
             .logo{width: auto; height: 100px; padding-left: 15px;}
-            .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px;}
+            .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px; width: 600px; height: auto;}
             .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
             .explanation_1{margin-right: 20px;}
             .explanation_2{margin-left: 20px;}
@@ -126,7 +127,7 @@
             <!-- TEXT -->
             <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
                 <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>Historia del mundo</b></h1>
-                <img src="img/first_mh.jpg" alt="MH" class="intro_images">
+                <img src="img/MH_worldmap.webp" alt="MH" class="intro_images">
                 <p style="font-family: MonsterHunter;" class="letter_size"> En cada juego de la saga, los jugadores asumen el papel de un cazador novato que se une a la 
                     Comisión de Investigación. A medida que avanzan en el juego, los cazadores deben enfrentarse a monstruos cada vez más poderosos y peligrosos. También 
                     descubren antiguos secretos y misterios relacionados con la historia y la ecología de los monstruos.<br>Si el jugador decide comprar todos los juegos y
@@ -151,49 +152,68 @@
                     <li>Alatreon</li>
                     <li>Miralis</li>
                     <li>Disufiroa</li>
-                    <li>Mephistophelin</li>
+                    <li>Merphistophelin</li>
                 </ul>
                 
                 <p style="font-family: MonsterHunter;" class="letter_size">Gracias a la actuación del Fatalis Blanco se consiguió que la humanidad recapacitase y crease el órgano conocido 
                     como "Gremio de cazadores", una organización que se encargaría de preservar la naturaleza y de controlar la cacería de monstruos para poder evitar una nueva guerra en el futuro.
                     Desde entonces, los cazadores han estado luchando para proteger a la humanidad y evitar la destrucción de la naturaleza.</p>
-                    <div class="responsive">
-                      <div class="gallery">
-                        <a target="_blank" href="img_5terre.jpg">
-                          <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-                        </a>
-                        <div class="desc">Fatalis Blanco</div>
-                      </div>
-                    </div>
-                    
-                    
-                    <div class="responsive">
-                      <div class="gallery">
-                        <a target="_blank" href="img_forest.jpg">
-                          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-                        </a>
-                        <div class="desc">Fatalis Carmesí</div>
-                      </div>
-                    </div>
-                    
-                    <div class="responsive">
-                      <div class="gallery">
-                        <a target="_blank" href="img_lights.jpg">
-                          <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-                        </a>
-                        <div class="desc">Fatalis Llameante</div>
-                      </div>
-                    </div>
-                    
-                    <div class="responsive">
-                      <div class="gallery">
-                        <a target="_blank" href="img_mountains.jpg">
-                          <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-                        </a>
-                        <div class="desc">Fatalis Negro</div>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
+            </div>
+
+            <div class="slideshow-container" style="background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309; margin-top: 40px;">
+              <h1 align="center" style="font-family: MonsterHunter;">DRAGONES NEGROS</h1><br><br>
+            
+              <div class="mySlides fade" align="center">
+                <img src="img/White_Fatalis.webp" style="width:70%">
+                <br><br><br><br><br><br>
+                <div class="text">Fatalis Blanco</div>
+              </div>
+            
+              <div class="mySlides fade" align="center">
+                <img src="img/crimesonfatalis.png" style="width:70%">
+                <br><br><br><br><br><br>
+                <div class="text">Fatalis Carmesí</div>
+              </div>
+            
+              <div class="mySlides fade" align="center">
+                <img src="img/flamingfatalis.png" style="width:70%">
+                <br><br><br><br><br><br>
+                <div class="text">Fatalis Llameante</div>
+              </div>
+
+              <div class="mySlides fade" align="center">
+                <img src="img/MHWI-Fatalis_Render_001.webp" style="width:70%">
+                <br><br><br><br><br><br>
+                <div class="text">Fatalis Negro</div>
+              </div>
+
+              <div class="mySlides fade" align="center">
+                <img src="img/MHWI-Alatreon_Render_002.webp" style="width:70%">
+                <br><br><br><br><br><br>
+                <div class="text">Alatreon</div>
+              </div>
+
+              <div class="mySlides fade" align="center">
+                <img src="img/MH15th-Render_Miralis_Funesto.webp" style="width:auto; height: 50%;">
+                <br><br><br><br><br><br>
+                <div class="text">Miralis Funesto</div>
+              </div>
+
+              <div class="mySlides fade" align="center">
+                <img src="img/FrontierGen-Disufiroa_Render_003.webp" style="width:70%">
+                <br><br><br><br><br><br>
+                <div class="text">Disufiroa</div>
+              </div>
+
+              <div class="mySlides fade" align="center">
+                <img src="img/MHO-Merphistophelin_Render_001.webp" style="width:70%">
+                <br><br><br><br><br><br>
+                <div class="text">Merphistophelin</div>
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            
             </div>
 
             <!-- Footer -->
@@ -220,5 +240,32 @@
           document.getElementById("mySidebar").style.display = "none";
           document.getElementById("myOverlay").style.display = "none";
         }
+
+        let slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
     </script>
 </html>
