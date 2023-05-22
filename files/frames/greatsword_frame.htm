@@ -1,9 +1,47 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(241, 115, 115);}
+
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(245, 81, 70); border: 3px solid rgb(206, 17, 3); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: 40%; height: auto;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        GreatSword
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">GRAN ESPADA</h1>
+        <br>
+        <div class="text-info">
+            <p>La Gran Espada es un arma de corte cuerpo a cuerpo introducida en Monster Hunter. Este arma está caracterizada por su gran poder, pero también por su lentitud.<br><br>
+            A partir de Monster Hunter 2, se añadieron al arma ataques cargados, aumentado así más poder a sus ataques. El tajo cargado tiene diferentes niveles de fuerza basándose en 
+            el tiempo de carga y están indicados por un brillo que va aumentando conforme se sube de nivel, pero si se carga durante demasiado tiempo la fuerza se perderá. Hay que esperar 
+            al mayor brillo para ejecutar el golpe más potente.<br><br>A pesar de sus ataques poderosos, su escasez de movimientos y su lentitud la hacen un arma poco deseable para muchos. 
+            Con el arma desenfundada, el cazador se moverá andando muy lentamente y los ataques tienen un tiempo largo de ejecución, haciendo que sea difícil de golpear a monstruos grandes.<br><br>
+            No suele ser un arma recomendable para principiantes ya que requiere cierto grado de maestría, y los monstruos que se cazan al principio no son muy grandes y se mueve bastante rápido.<br><br>
+            Debido a su lentitud y difícil manejo, la Gran Espada es un arma que requiere cierta experiencia para poder manejarla con destreza.</p>
+        </div>
+        <div align="center">
+            <img src="../img/greatsword_ex.webp" alt="Greatsword" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/8Ke51YCyQl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

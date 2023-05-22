@@ -109,6 +109,7 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
     body{width: 90%;}
     .logo{height: 110px; width: auto; padding-top: 20px;}
     .container{margin-left: 10%;}
+    .container_2{margin-left: 10%;}
     .last_part{width: 104%;}
     .cell_footer{width: 200px;}
     .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
@@ -117,7 +118,8 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
 @media only screen and (max-width:480px){
     body{width: 80%;}
     .logo{height: 110px; width: auto; padding-top: 15px;}
-    .container{margin-right: -13%;}
+    .container{margin-right: -13%; margin-left: 30px;}
+    .container_2{margin-right: -15%; margin-left: 36px;}
     .last_part{width: 113%;}
     .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
 }
