@@ -94,7 +94,7 @@ h4{
 }
 
 .content {
-  padding: 20px 30px;
+  padding: 20px 8px;
   background-color: #d47e4c;
   border: 3px solid #502309;
   position: relative;
@@ -107,4 +107,10 @@ h4{
   .container::before {left: 60px; border: medium solid #502309; border-width: 10px 10px 10px 0; border-color: transparent #502309 transparent transparent;}
   .left::after, .right::after {left: 15px;}
   .right {left: 0%;}
+}
+
+@media screen and (max-width: 480px){
+  .content{width: 280px;}
+  .TimeImg{width: 90%; height: auto;}
+  .TimeImg2{width: 90%; height: auto;}
 }
