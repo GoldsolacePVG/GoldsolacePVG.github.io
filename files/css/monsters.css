@@ -12,6 +12,7 @@
   float: left;
   width: 40%;
   margin-bottom: 50px;
+  margin-left: 170px;
 }
 
 .container2{
@@ -19,6 +20,7 @@
   float: right;
   width: 50%;
   margin-bottom: 50px;
+  margin-right: -50px;
 }
 
 .image {
@@ -52,7 +54,7 @@
 
 .text {
   color: black;
-  font-size: 23px;
+  font-size: 15px;
   position: absolute;
   top: 50%;
   left: 40%;
@@ -63,6 +65,8 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1280px){
+  .container1{margin-left: 0px;}
+  .container2{margin-right: 0px;}
   .text{font-size: 15px;}
 }
 
@@ -74,6 +78,10 @@
 }
 
 @media only screen and (max-width: 480px){
-  .text{font-size: 5px;}
+  .text{font-size: 10px;}
   .monster-container{display: block;}
+  .image{width: 300px;}
+  .overlay{width: 300px;}
+  .container1{margin-left: 0px;}
+  .container2{margin-right: 130px;}
 }

@@ -1,9 +1,54 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(208, 243, 151);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(178, 255, 91); border: 3px solid rgb(128, 206, 3); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 50%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        Sword and Shield
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">ESPADA Y ESCUDO</h1>
+        <br><br><br>
+        <div class="text-info">
+            <p>La Espada y Escudo es un arma de corte cuerpo a cuerpo introducida en Monster Hunter. Caracterizada por ser un arma sencilla, con gran cantidad de combos y usada para 
+            infligir daño elemental.<br><br>
+            La Espada y Escudo suele ser la primera clase de arma que utilizan los cazadores principiantes, debido a su fácil manejo y su capacidad de bloquear. Este arma no posee 
+            demasiada fuerza, pero se basa en la velocidad y sus variados combos para infligir daño, además de ser una buena arma para infligir daño de atributo elemental o de estado.<br><br>
+            Por su pequeño tamaño, es un arma de buena movilidad, pudiendo evadir y desplazarse de manera normal cuando está desenfundada. Además permite utilizar objetos con el arma 
+            desenfundada, y el pequeño escudo ofrece defensa frente a varios ataques.<br><br>
+            A pesar de ser un arma para novatos, los cazadores más expertos pueden hacer un buen uso de este arma y tener tanta utilidad como cualquier otra.<br><br>
+            Ventajas:</p>
+            <ul>
+                <li>Capacidad de bloquear</li>
+                <li>Capacidad de utilizar aceites</li>
+                <li>Buen Ataque Elemental</li>
+                <li>Perfecta para principiantes</li>
+            </ul>
+        </div>
+        <div align="center">
+            <img src="../img/sns_ex.webp" alt="Sword & Shield" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/mEtcWHBKpG4" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

@@ -119,7 +119,7 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
     body{width: 80%;}
     .logo{height: 110px; width: auto; padding-top: 15px;}
     .container{margin-right: -13%; margin-left: 30px;}
-    .container_2{margin-right: -15%; margin-left: 36px;}
+    .container_2{margin-left: 8px; width: 120%;}
     .last_part{width: 113%;}
     .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
 }

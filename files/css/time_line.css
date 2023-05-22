@@ -110,7 +110,7 @@ h4{
 }
 
 @media screen and (max-width: 480px){
-  .content{width: 280px;}
+  .content{width: 250px;}
   .TimeImg{width: 90%; height: auto;}
   .TimeImg2{width: 90%; height: auto;}
 }

@@ -10,11 +10,17 @@
             *{box-sizing: border-box;}
             @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
             body{background-color: rgb(243, 222, 151);}
-
+            
             .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(255, 225, 91); border: 3px solid rgb(206, 152, 3); border-radius: 1%; padding: 10px;}
             .weapon-img{width: 40%; height: auto;}
             @media screen and (max-width: 768px){
-              .text-info{width: 100%; margin-left: 50px;}
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
             }
         </style>
     </head>
