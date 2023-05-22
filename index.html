@@ -21,7 +21,7 @@
             body{
                 background-image: url('files/img/background_img.jpg'); 
                 background-size: 1920px 1000px; 
-                background-repeat: no-repeat;
+                /* background-repeat: no-repeat; */
                 background-attachment: fixed;
             }
             article {
@@ -39,28 +39,19 @@
                 margin-left: 30px;
                 margin-right: 10px;
                 background-color: #d47e4c;
-			}
-
+            }
+            .intro_images{height: 22%; width: auto;}
             /*Tablet*/
             @media only screen and (min-width:480px) and (max-width:768px){
                 .letter_size{font-size: 20px;}
                 .information{margin-left: 60px; margin-right: -15px;}
                 .intro_images{height: auto; width: 50%;}
-                .history{width: 280px; height: auto;}
-                .w3-padding-64{padding-top: 10px; padding-bottom: 10px;}
             }
             /*Movil*/
             @media only screen and (max-width:480px){
                 .letter_size{font-size: 17px;}
-                .information{margin-left: 50px; margin-right: -45px;}
-                .history{float: right; width: 97%;}
-                .intro_images{height: 30%; width: auto;}
-                .explanation_1{margin-right: 0%;}
-                .explanation_2{margin-left: 0%;}
-                .w3-half{width: 100%; align-items: center;}
-                .w3-xxxlarge{font-size: 40px;}
-                .video_exp{width: 300px; height: auto;}
-                .video_container{height: 270px;}
+                .information{margin-left: 30px; margin-right: -45px;}
+                .intro_images{height: 35%; width: auto;}
             }
         </style>
         <script src="files/java/own_functions.js"></script>
@@ -92,7 +83,7 @@
         <!-- TOP MENU -->
         <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: #b95419;">
             <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()"><img src="files/img/logo_monster_hunter.png" width="75px" height="75px"></a>
-            <span style="font-family: MonsterHunter; font-size: 30px;" align="center">MONSTER HUNTER</span>
+            <span style="font-family: MonsterHunter; font-size: 25px;" align="center">MONSTER HUNTER</span>
         </header>
 
         <!-- OPENING EFFECT -->
@@ -103,12 +94,24 @@
             <!-- Header -->
             <div class="w3-container" style="margin-top:100px; margin-bottom: 50px;" id="showcase">
                 <h1 class="w3-jumbo" style="font-family: MonsterHunter;"><b>Bienvenid@ al mundo de</b></h1>
-                <img src="files/img/mh3u.webp" id="main_logo" alt="Logo" class="logoPresentation">
+                <!-- <img src="files/img/mh3u.webp" id="main_logo" alt="Logo" class="logoPresentation"> -->
                 <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
             </div>
 
-           <!-- Footer -->
-           <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px;">
+            <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
+                <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>¿Qué podrás encontrar?</b></h1>
+                <img src="files/img/Sprite-Delegada.webp" alt="MH" class="intro_images">
+                <p style="font-family: MonsterHunter;" class="letter_size">Esta web es un proyecto academico en el cual se explican diversos aspectos del videojuego
+                Monster Hunter, como puede ser una breve introducción sobre de que trata el juego y algunas caracteristicas que lo hacen único.<br><br> Se hace un repaso 
+                de los diferentes videojuegos de la saga principal (los cuales van desde Monster Hunter 1 hasta el proximo Monster Hunter Now).<br><br>Entre otras cosas 
+                se habla de los tipos de monstruos que hay en la saga, como pueden ser los Wyvern Brutos, los Dragones Ancianos, etc.<br> Otra sitio que podemos visitar
+                es la sección de armas, donde se explica de forma general las caracteristicas de cada tipo de arma, por supuesto acompañado de un video para ver los combos.<br><br>
+                Y por último y no menos importante comentamos un poco la historia que hay detras del videojuego, y que solo se puede apreciar una vez se han jugado varios titulos 
+                de la saga.<br><br><br>Las diferentes secciones las encontraras aqui abajo o en el menu de la propia página.</p>
+            </div>
+
+            <!-- Footer -->
+            <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px;">
                 <table class="last_part">
                     <tr>
                         <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="files/footer_files/form.htm">Política de Privacidad</a></td>
