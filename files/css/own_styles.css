@@ -67,7 +67,7 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
 .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
 .explanation_1{margin-right: 20px;}
 .explanation_2{margin-left: 20px;}
-.video_container{height: 450px;}
+.video_container{height: 1000px;}
 .responsive{padding: 0 6px; float: left; width: 13.222222%; margin-bottom: 5px; margin-right: 10px; margin-left: 5px;}
 
 /*FOOTER*/
