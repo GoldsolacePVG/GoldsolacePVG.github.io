@@ -1,9 +1,50 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(194, 151, 243);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(176, 91, 255); border: 3px solid rgb(189, 3, 206); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 50%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        Light Bow Gun
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">BALLESTA LIGERA</h1>
+        <br>
+        <div class="text-info">
+            <p>La Ballesta Ligera es una ballesta de poco peso que permite moverse a velocidad normal. Puedes desplegarla más rápido que la Ballesta Pesada y su cadencia de tiro es mayor. 
+            Debido a su tamaño compacto, su potencia es menor que la de su contraparte, pero los cazadores suelen preferir la ballesta ligera debido a su rápidez, fácil creación y manejo.<br><br>
+            Hay varios monstruos que se cazan más fácilmente, como el Diablos con Disparos de Hielo o el Kirin con disparo de perdigones. La Ballesta Ligera posee la ventaja de ser más 
+            manejable y no dificulta el movimiento durante el combate. Pero están limitadas por el tipo de munición que se puede equipar, por lo que es importante elegir las balas más 
+            efectivas contra tu oponente.<br><br>Además, la ballesta ligera es más elemental que su contraparte. Mientras que la Ballesta Pesada es más principal, la Ballesta Ligera es 
+            más usada como apoyo. Con las ballesta ligeras se puede inflingir gran daño elemental, mientras que las pesadas son más de munición potente. A pesar de que la ballesta ligera 
+            también puede usar esas balas, los cazadores suelen preferir las Ballestas Pesadas para ello.<br><br>Es importante, además, saber ciertas características de una ballesta antes 
+            de crearla o mejorarla. Si vas a luchar contra un monstruo rápido, fíjate en la velocidad de recarga y retroceso. Lo general suele ser recarga rápida y retroceso moderado, pero 
+            esto cambia dependiendo de la munición. Mientras que los disparos elementales, perdigones y perforantes mantienen estas características igual, los disparos explosivos, de grupo 
+            y estado anormal reducen su velocidad.</p>
+        </div>
+        <div align="center">
+            <img src="../img/lbg_ex.webp" alt="LightBowGun" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/_OS0HOsIYqE" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

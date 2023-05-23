@@ -102,7 +102,7 @@
                 <h1 class="w3-xxxlarge w3-text-red" style="font-family: MonsterHunter;"><b>Introducción</b></h1>
                 <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
             </div>
-
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             <!-- TEXT -->
             <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
                 <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>¿De qué trata?</b></h1>
@@ -148,7 +148,27 @@
                 </table>
             </div>
         </div>
-
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+  
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+  
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+  
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+          </script>
     </body>
     <script type="text/javascript">
         // Script to open and close sidebar

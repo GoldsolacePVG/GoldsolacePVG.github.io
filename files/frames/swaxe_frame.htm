@@ -1,9 +1,51 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(243, 151, 151);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(255, 91, 91); border: 3px solid rgb(206, 3, 3); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 40%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        Switch Axe
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">HACHA-ESPADA</h1>
+        <br>
+        <div class="text-info">
+            <p>El Hacha Espada es un arma de corte cuerpo a cuerpo introducida en Monster Hunter 3. Como su nombre lo indica, este arma es capaz de transmutar entre dos modos distintos.<br><br>
+            El Hacha Espada es la primera arma que puede cambiar de forma y utilizarse de dos maneras distintas para atacar, más tarde el Hacha Cargada presenta también esta característica. 
+            La posibilidad de cambiar de modos permite a este arma adaptarse al tipo de enemigo y emplear gran variedad de ataques.</p>
+            <h3 style="font-family: MonsterHunter;">Modos</h3>
+            <ul>
+                <li>En Modo Hacha el arma toma forma de una enorme hacha, lenta, pero con buen alcance y ataques contundentes. Su variedad de ataques permite cubrir 
+                distintas áreas en torno al cazador.</li>
+                <li>En Modo Espada el arma muta a una Gran Espada con ataques más rápidos. Aunque no tiene ataques cargados, en este modo el arma emplea frascos 
+                (también llamados revestimientos o phials) que imbuyen al arma con energía que otorga distintos efectos, tales como bonus de ataque o ataque elemental. 
+                Este modo consumirá el indicador de cambio y al consumirse completamente mutará de nuevo a modo hacha.</li>
+            </ul>
+        </div>
+        <div align="center">
+            <img src="../img/switchaxe_ex.webp" alt="SwitchAxe" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/Pp5SeAtWSkU" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

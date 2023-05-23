@@ -1,9 +1,53 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(151, 198, 243);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(91, 236, 255); border: 3px solid rgb(3, 159, 206); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 45%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        ChargeBlade
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">HACHA CARGADA</h1>
+        <br>
+        <div class="text-info">
+            <p>El Hacha Cargada es un arma de corte cuerpo a cuerpo introducida en Monster Hunter 4, pero que llegó a occidente en Monster Hunter 4 Ultimate. Similar al Hacha Espada, 
+            es capaz de transformarse en dos armas distintas y ofrece equilibiro entre ataque y defensa.<br><br>
+            Este arma combina la movilidad de una espada y escudo con la potencia de un hacha. Aparte, este arma también emplea frascos para aumentar su poder en modo hacha, 
+            éstos deben rellenarse obteniendo energía de los golpes.</p>
+            <h3 style="font-family: MonsterHunter;">Modos</h3>
+            <ul>
+                <li>En Modo Espada/Escudo se posee mayor movilidad y permite bloquear con el escudo, al golpear con el arma se irá almacenando energía en la espada, que puede
+                transferirse a los frascos para aumentar el poder del modo hacha.</li>
+                <li>En Modo Hacha el arma cambia a un hacha que sirve para desatar la energía obtenida en el modo espada/escudo, sus movimientos son lentos, similares a los 
+                del Hacha Espada en modo hacha, pero puede lanzar la poderosa descarga elemental.</li>
+            </ul>
+            <p>En resumen, el Hacha Cargada es una poderosa arma que cambia de forma entre una espada/escudo y un hacha. Acumula energía con la espada, cambia a hacha y desata 
+            con ella un tormentoso ataque lleno de energía.</p>
+        </div>
+        <div align="center">
+            <img src="../img/chblade_ex.webp" alt="ChargeBlade" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/oczfpND_48w" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

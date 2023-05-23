@@ -109,7 +109,7 @@
                 <h1 class="w3-xxxlarge w3-text-red" style="font-family: MonsterHunter;"><b>Armas</b></h1>
                 <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
             </div>
-
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             <!-- Gallery -->
             <div class="container">
                 <!-- GreatSword -->
@@ -257,7 +257,7 @@
 
             <a name="weapon_info"></a>
             <div align="center" style="margin-top: 30px;" class="container_2">
-                <iframe id="mainFrame" src="http://www.esat.es" width="100%" height="1050px" name="main_frame" style="border: 3px solid black;"></iframe>
+                <iframe id="mainFrame" src="frames/greatsword_frame.htm" width="100%" height="1050px" name="main_frame" style="border: 3px solid black;"></iframe>
             </div>
             <!-- Footer -->
             <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px">
@@ -270,7 +270,27 @@
                 </table>
             </div>
         </div>
-           
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+  
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+  
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+  
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+          </script>
     </body>
     <script type="text/javascript">
         // Script to open and close sidebar

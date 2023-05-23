@@ -43,6 +43,23 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
     border-image-width: 25px;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: 99;
+    font-size: 30px;
+    border: 2px solid white;
+    outline: none;
+    background-color: black;
+    color: #cf4f05;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-family: MonsterHunter;
+}
+
 .menu_test{cursor: url(img/cursor_hover.webp)}
 .letter_size{font-size: 25px;}
 .logo{width: auto; height: 100px; padding-left: 15px;}
@@ -69,6 +86,7 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
     .cell_footer{width: 100px;}
     .cell_footer2{width: 200px;}
     .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
+    #myBtn{font-size: 20px; bottom: 130px; opacity: 0.9;}
 }
 
 @media only screen and (max-width:480px){
@@ -79,4 +97,5 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
     .last_part{width: 113%;}
     .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
     .copyright{width: 20px;}
+    #myBtn{font-size: 15px; bottom: 130px; opacity: 0.9; right: 30px;}
 }

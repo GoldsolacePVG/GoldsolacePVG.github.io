@@ -54,9 +54,8 @@
               text-decoration: none;
             }
 
-            .responsive{padding: 0 6px;float: left;width: 24.99999%;}
             .logo{width: auto; height: 100px; padding-left: 15px;}
-            .intro_images{float: left; padding: 10px; border-radius: 8%; margin-right: 5px; width: 600px; height: auto;}
+            .intro_images_1{float: left; padding: 10px; border-radius: 8%; margin-right: 5px; width: 600px; height: auto;}
             .history{float: right; padding: 10px; height: auto; width: 350px; border-radius: 8%; margin-right: 5px;}
             .explanation_1{margin-right: 20px;}
             .explanation_2{margin-left: 20px;}
@@ -65,20 +64,19 @@
             @media only screen and (min-width:480px) and (max-width:768px){
                 .letter_size{font-size: 20px;}
                 .information{margin-left: 60px; margin-right: -15px;}
-                .intro_images{height: auto; width: 50%;}
+                .intro_images_1{height: auto; width: 50%;}
                 .history{width: 280px; height: auto;}
                 .w3-padding-64{padding-top: 10px; padding-bottom: 10px;}
-                .responsive {width: 49.99999%;margin: 6px 0;}            
+                .slideshow-container{margin-left: 70px;}   
             }
             /*Movil*/
             @media only screen and (max-width:480px){
                 .letter_size{font-size: 17px;}
                 .information{margin-left: 30px; margin-right: -45px;}
                 .history{float: right; width: 97%;}
-                .intro_images{height: auto; width: 270px;}
+                .intro_images_1{height: auto; width: 270px;}
                 .explanation_1{margin-right: 0%;}
                 .explanation_2{margin-left: 0%;}
-                .responsive {width: 100%;}
                 .slideshow-container{margin-left: 30px; width: 305px;}
                 .cell_footer{font-size: 15px;}
                 .cell_footer2{font-size: 15px;}
@@ -113,17 +111,18 @@
 
         <!-- WEB CONTENT -->
         <div class="w3-main" style="margin-left:340px; margin-right:40px">
+          
             <!-- Header -->
             <div class="w3-container" style="margin-top:100px; margin-bottom: 50px;" id="showcase">
                 <h1 class="w3-jumbo" style="font-family: MonsterHunter;"><b>Monster Hunter</b></h1>
                 <h1 class="w3-xxxlarge w3-text-red" style="font-family: MonsterHunter;"><b>Lore</b></h1>
                 <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
             </div>
-
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             <!-- TEXT -->
             <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
                 <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>Historia del mundo</b></h1>
-                <img src="img/MH_worldmap.webp" alt="MH" class="intro_images">
+                <img src="img/MH_worldmap.webp" alt="MH" class="intro_images_1">
                 <p style="font-family: MonsterHunter;" class="letter_size"> En cada juego de la saga, los jugadores asumen el papel de un cazador novato que se une a la 
                     Comisión de Investigación. A medida que avanzan en el juego, los cazadores deben enfrentarse a monstruos cada vez más poderosos y peligrosos. También 
                     descubren antiguos secretos y misterios relacionados con la historia y la ecología de los monstruos.<br>Si el jugador decide comprar todos los juegos y
@@ -223,7 +222,27 @@
                 </table>
             </div>
         </div>
+        <script>
+          // Get the button
+          let mybutton = document.getElementById("myBtn");
 
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
     </body>
     <script type="text/javascript">
         // Script to open and close sidebar

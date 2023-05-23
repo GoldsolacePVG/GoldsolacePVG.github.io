@@ -1,9 +1,54 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(243, 222, 151);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(255, 244, 91); border: 3px solid rgb(206, 125, 3); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 45%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        GunLance
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">LANZA-PISTOLA</h1>
+        <br>
+        <div class="text-info">
+            <p>A pesar de tener un mecanismo de disparo, la distancia de éste es muy corta, además con cada disparo el filo del arma se irá reduciendo. El uso de este 
+            arma es muy similar al de la Lanza.<br><br>
+            Al igual que las armas de larga distancia, posee munición, que se irá gastando conforme se vaya atacando con distintos ataques y que se deberá recargar cuando se gaste.<br><br>
+            Según cual sea el ataque de disparo, las balas se irán gastando de una a una o de golpe, como con el disparo de barrido. Además el arma se irá cargando de energía, 
+            que se podrá liberar cuando la punta del arma brille intensamente mediante el Fuego Wyvern, uno de los ataques más dañinos; sin embargo, esto posee una desventaja, 
+            ya que el arma se sobrecalienta y necesitará un tiempo para enfriarse antes de volver a poder disparar.<br><br>
+            Además de los disparos, la Lanza Pistola posee un gran bloqueo y un alcance similar al de la Lanza, y al igual que ésta, se debe saber bloquear, ya que la evasión es difícil.</p>
+            <ul>
+                <li>Gran potencia de ataques.</li>
+                <li>Gran daño gracias a los disparos.</li>
+                <li>Gran bloqueo.</li>
+                <li>Buen afilado.</li>
+                <li>Permite cortar colas.</li>
+            </ul>
+        </div>
+        <div align="center">
+            <img src="../img/gunlance_ex.webp" alt="GunLance" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/qvB6-6DSiiQ" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>
