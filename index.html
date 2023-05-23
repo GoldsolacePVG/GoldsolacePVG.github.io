@@ -40,18 +40,42 @@
                 margin-right: 10px;
                 background-color: #d47e4c;
             }
+            div.gallery img{
+                width: auto;
+                height: 100px;
+            }
+            div.desc{
+                padding: 10px;
+                text-align: center;
+                font-family: MonsterHunter;
+                font-size: 22px;
+            }
+            .information{height: 930px;}
             .intro_images{height: 22%; width: auto;}
+            .container{margin-bottom: 10px;}
+            .icons_select{margin-left: 75px;}
+
             /*Tablet*/
             @media only screen and (min-width:480px) and (max-width:768px){
                 .letter_size{font-size: 20px;}
-                .information{margin-left: 60px; margin-right: -15px;}
+                .information{margin-left: 60px; margin-right: -15px; height: 1600px;}
                 .intro_images{height: auto; width: 50%;}
+                .responsive{width: 45%; margin: 6px 0;}
+                .icons_select{margin-left: 0px;}
+                .icons_selec_resp{margin-right: -10px;}
             }
             /*Movil*/
             @media only screen and (max-width:480px){
                 .letter_size{font-size: 17px;}
-                .information{margin-left: 30px; margin-right: -45px;}
-                .intro_images{height: 35%; width: auto;}
+                .information{margin-left: 30px; margin-right: -45px; height: 2420px;}
+                .intro_images{width: 270px; height: auto;}
+                .responsive{width: 90%; margin-left: -20px;}
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
             }
         </style>
         <script src="files/java/own_functions.js"></script>
@@ -62,14 +86,14 @@
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size: 25px; font-family: MonsterHunter;">CLOSE MENU</a>
             <a href="index.html"><img src="files/img/logo_monster_hunter.png" class="logo"></a>
             <div class="w3-container">
-              <h3 class="w3-padding-64" style="font-family: MonsterHunter; font-size: xxx-large;"><b>Monster<br>Hunter</b></h3>
+                <h3 class="w3-padding-64" style="font-family: MonsterHunter; font-size: xxx-large;"><b>Monster<br>Hunter</b></h3>
             </div>
             <div class="w3-bar-block">
-                <a href="files/1_intro.htm" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: MonsterHunter; font-size: 30px; cursor: url(files/img/cursor_hover.webp);">Intro       <img src="files/img/intro_icon.png" width="auto" height="45px" style="margin-left: 10px; margin-bottom: 5px;"></a> 
-                <a href="files/2_games.htm" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: MonsterHunter; font-size: 30px;">Games      <img src="files/img/mando.png" width="auto" height="50px"></a> 
-                <a href="files/3_monsters.htm" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: MonsterHunter; font-size: 30px;">Monsters       <img src="files/img/monsters_icon.png" width="auto" height="70px"></a> 
-                <a href="files/4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: MonsterHunter; font-size: 30px;">Weapons <img src="files/img/longsword_icon.webp" width="auto" height="50px"></a>
-                <a href="files/5_lore.htm" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="files/img/lore_icon.webp" width="auto" height="60px"></a>
+                <a href="files/1_intro.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Intro       <img src="files/img/intro_icon.png" width="auto" height="45px" style="margin-left: 10px; margin-bottom: 5px;"></a> 
+                <a href="files/2_games.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Juegos      <img src="files/img/mando.png" width="auto" height="50px"></a> 
+                <a href="files/3_monsters.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Monstruos       <img src="files/img/monsters_icon.png" width="auto" height="70px"></a> 
+                <a href="files/4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Armas <img src="files/img/longsword_icon.webp" width="auto" height="50px"></a>
+                <a href="files/5_lore.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="files/img/lore_icon.webp" width="auto" height="60px"></a>
             </div>
             <div class="social_media">
                 <a href="https://www.facebook.com/rodrigo.mico.507/" target="_blank" title="Facebook"><i class='bx bxl-facebook' ></i></a>
@@ -81,8 +105,8 @@
         </nav>
   
         <!-- TOP MENU -->
-        <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: #b95419;">
-            <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()"><img src="files/img/logo_monster_hunter.png" width="75px" height="75px"></a>
+        <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="background-color: #b95419;">
+            <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="files/img/logo_monster_hunter.png" width="75px" height="75px"></a>
             <span style="font-family: MonsterHunter; font-size: 25px;" align="center">MONSTER HUNTER</span>
         </header>
 
@@ -108,6 +132,54 @@
                 es la sección de armas, donde se explica de forma general las caracteristicas de cada tipo de arma, por supuesto acompañado de un video para ver los combos.<br><br>
                 Y por último y no menos importante comentamos un poco la historia que hay detras del videojuego, y que solo se puede apreciar una vez se han jugado varios titulos 
                 de la saga.<br><br><br>Las diferentes secciones las encontraras aqui abajo o en el menu de la propia página.</p>
+
+                <div class="container">
+                    <a href="files/1_intro.htm">
+                        <div class="responsive icons_select" id="borderimg">
+                            <div class="gallery" align="center">
+                                <img src="files/img/collage.png" alt="collage" width="auto" height="100" title="Greatsword">
+                                <div class="desc">Introducción</div>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="files/2_games.htm">
+                        <div class="responsive icons_select icons_selec_resp" id="borderimg">
+                            <div class="gallery" align="center">
+                                <img src="files/img/mh_gen_game.webp" alt="game" width="auto" height="100" title="Longsword" style="border-radius: 5%;">
+                                <div class="desc">Juegos</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="files/3_monsters.htm">
+                        <div class="responsive icons_select" id="borderimg">
+                            <div class="gallery" align="center">
+                                <img src="files/img/brutales.webp" alt="game" width="auto" height="100" title="Longsword" style="border-radius: 5%;">
+                                <div class="desc">Monstruos</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="files/4_weapons.htm">
+                        <div class="responsive icons_select icons_selec_resp" id="borderimg">
+                            <div class="gallery" align="center">
+                                <img src="files/img/longsword_ex.webp" alt="game" width="auto" height="100" title="Longsword" style="border-radius: 5%;">
+                                <div class="desc">Armas</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="files/5_lore.htm">
+                        <div class="responsive icons_select" id="borderimg">
+                            <div class="gallery" align="center">
+                                <img src="files/img/MH_worldmap.webp" alt="game" width="auto" height="100" title="Longsword" style="border-radius: 5%;">
+                                <div class="desc">Lore</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
             </div>
 
             <!-- Footer -->
