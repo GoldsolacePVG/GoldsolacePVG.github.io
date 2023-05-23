@@ -103,6 +103,7 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
 /*FOOTER*/
 .last_part{width: 100%;}
 .cell_footer{width: 100px;}
+.cell_footer2{width: 500px;}
 .end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
 
 @media only screen and (min-width:480px) and (max-width:768px){
