@@ -1,23 +1,3 @@
-// Logo Change
-// const images = ["files/img/mh3u.webp", "files/img/mh4u.png", "files/img/mhgenu.webp", "files/img/mhst.png", "files/img/mhwi.png",
-//                 "files/img/mhxr.webp", "files/img/mhr.png", "files/img/mhrs.png", "files/img/mhst2.png"];
-const images = ["files/img/mh3u.webp", "files/img/mh4u.png"];
-let index = 0;
-
-function ChangeImage() {
-  const myImage = document.getElementById("main_logo");
-  if(index == 0){myImage.style.top = "1.5%";}
-  if(index == 1){myImage.style.top = "3%";}
-  if(index == 2){myImage.style.top = "1.5%";}
-  myImage.src = images[index];
-  index++;
-  if(index === images.length){
-    index = 0;
-  }
-}
-
-setInterval(ChangeImage, 3000);
-
 // iFrame Change
 function ChangeContent(weapon_number){
   switch(weapon_number){
