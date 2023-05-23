@@ -1,53 +1,6 @@
 body{cursor: url(../img/cursor.webp), auto;}
 a{cursor: url(../img/cursor_hover.webp), auto;}
 
-/*SOCIAL MEDIA LOGOS*/
-.social_media{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 20px;
-    width: 89%;
-}
-
-.social_media a{
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border: 2px solid black;
-    border-radius: 50%;
-    font-size: 20px;
-    background: transparent;
-    color: black;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.social_media a:hover{
-    color: #b95419;
-}
-
-.social_media a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: black;
-    z-index: -1;
-    transition: .5s;
-}
-
-.social_media a:hover::before{
-    width: 100%;
-}
-
 /*SCROLL BAR*/
 /* width */
 ::-webkit-scrollbar {
@@ -102,9 +55,10 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
 
 /*FOOTER*/
 .last_part{width: 100%;}
-.cell_footer{width: 100px;}
-.cell_footer2{width: 500px;}
-.end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
+.cell_footer{color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;}
+.cell_footer2{color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;}
+.end_information{margin-top: 50px; padding-right: 58px; background-color: black; margin-left: -40px; margin-right: -40px;}
+.copyright{width: 20px; height: auto;}
 
 @media only screen and (min-width:480px) and (max-width:768px){
     body{width: 90%;}
@@ -112,7 +66,8 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
     .container{margin-left: 10%;}
     .container_2{margin-left: 10%;}
     .last_part{width: 104%;}
-    .cell_footer{width: 200px;}
+    .cell_footer{width: 100px;}
+    .cell_footer2{width: 200px;}
     .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
 }
 
@@ -123,4 +78,5 @@ a{cursor: url(../img/cursor_hover.webp), auto;}
     .container_2{margin-left: 8px; width: 120%;}
     .last_part{width: 113%;}
     .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
+    .copyright{width: 20px;}
 }

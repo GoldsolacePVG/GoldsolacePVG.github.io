@@ -1,9 +1,54 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(243, 151, 235);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(250, 91, 255); border: 3px solid rgb(159, 3, 206); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 50%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        Dual Blades
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">ESPADAS DOBLES</h1>
+        <br><br><br>
+        <div class="text-info">
+            <p>Las Espadas Dobles, llamadas normalmente como Duales, son un arma de corte cuerpo a cuerpo introducida en Monster Hunter (en Japón fueron introducidas en Monster Hunter G). 
+            Este arma es conocida por centrarse en la velocidad y el ataque, dejando atrás la defensa.<br><br>
+            A pesar de tener poca potencia por golpe, esto se compensa con su velocidad y su gran variedad de combos, además de tener buena cantidad de atributos elementales. 
+            Las Espadas Dobles destacan por sus largos combos y la capacidad de infligir un daño considerable en poco tiempo. Comparada con otras armas, las Espadas Dobles poseen 
+            combos largos, rápidos e infinitos.<br><br>
+            La característica más importante de las Espadas Dobles es el modo Demonización o Demoníaco. En este modo, la velocidad y ataque de las espadas aumenta, además de ganar movimientos 
+            nuevos, pero la barra de resistencia irá menguando rápidamente. A partir de MHP3, golpear a monstruos en este modo irá rellenando un medidor localizado bajo la barra de resistencia,
+            y al llenarse el cazador entrará en modo Archidemoníaco.</p>
+            <ul>
+                <li>Son las armás más rápidas y ágiles.</li>
+                <li>Combos rápidos y largos que infligen gran daño en poco tiempo.</li>
+                <li>La danza de espadas permite golpear sin que el arma rebote.</li>
+                <li>El modo archidemoníaco ofrece gran poder y velocidad de movimiento.</li>
+            </ul>
+        </div>
+        <div align="center">
+            <img src="../img/dual_ex.webp" alt="Dual Blades" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/rCaS3NPh_UE" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

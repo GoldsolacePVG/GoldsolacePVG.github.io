@@ -53,6 +53,12 @@
                 font-family: MonsterHunter;
                 font-size: 22px;
             }
+            a:link, a:visited, a:active{
+                text-decoration: none;
+            }
+
+            .monster-hunter-logo{width: 20%; height: auto; position: absolute; right: 550px; top: 30px;}
+            .felynes-gif{width: 17%; height: auto; position: absolute; right: 200px; top: 80px;}
             .information{height: 930px;}
             .intro_images{height: 22%; width: auto;}
             .container{margin-bottom: 10px;}
@@ -62,10 +68,13 @@
             @media only screen and (min-width:480px) and (max-width:768px){
                 .letter_size{font-size: 20px;}
                 .information{margin-left: 60px; margin-right: -15px; height: 1600px;}
-                .intro_images{height: auto; width: 50%;}
+                .intro_images{height: auto; width: 200px;}
                 .responsive{width: 45%; margin: 6px 0;}
                 .icons_select{margin-left: 0px;}
                 .icons_selec_resp{margin-right: -10px;}
+                .main-title{font-size: 50px; margin-top: 40px;}
+                .monster-hunter-logo{right: 70px; top: 115px; width: 25%;}
+                .felynes-gif{display: none;}
             }
             /*Movil*/
             @media only screen and (max-width:480px){
@@ -73,6 +82,10 @@
                 .information{margin-left: 30px; margin-right: -45px; height: 2420px;}
                 .intro_images{width: 270px; height: auto;}
                 .responsive{width: 90%; margin-left: -20px;}
+                .cell_footer{font-size: 15px;}
+                .cell_footer2{font-size: 15px;}
+                .main-title{font-size: 50px;}
+                .monster-hunter-logo{width: 300px; position: static; }
             }
 
             .clearfix:after {
@@ -98,13 +111,6 @@
                 <a href="files/4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Armas <img src="files/img/longsword_icon.webp" width="auto" height="50px"></a>
                 <a href="files/5_lore.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="files/img/lore_icon.webp" width="auto" height="60px"></a>
             </div>
-            <div class="social_media">
-                <a href="https://www.facebook.com/rodrigo.mico.507/" target="_blank" title="Facebook"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/goldsolace_yt/" target="_blank" title="Instagram"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://twitter.com/Goldsolace9995" target="_blank" title="Twitter"><i class='bx bxl-twitter' ></i></a>
-                <a href="https://www.linkedin.com/in/rodrigo-mic%C3%B3-pliego-572760258/" target="_blank" title="Linkedin"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/GoldsolacePVG" target="_blank" title="GitHub"><i class='bx bxl-github' ></i></a>
-            </div>
         </nav>
   
         <!-- TOP MENU -->
@@ -120,21 +126,22 @@
         <div class="w3-main" style="margin-left:340px; margin-right:40px">
             <!-- Header -->
             <div class="w3-container" style="margin-top:100px; margin-bottom: 50px;" id="showcase">
-                <h1 class="w3-jumbo" style="font-family: MonsterHunter;"><b>Bienvenid@ al mundo de</b></h1>
-                <!-- <img src="files/img/mh3u.webp" id="main_logo" alt="Logo" class="logoPresentation"> -->
+                <h1 class="w3-jumbo main-title" style="font-family: MonsterHunter;"><b>Bienvenid@ al mundo de</b></h1>
+                <img src="files/img/Monster-Hunter-Logo-2004.png" alt="Logo" class="monster-hunter-logo">
+                <img src="files/img/d8enbbg-9968e037-9b48-4338-9ad5-da144ab5ef89.gif" class="felynes-gif">
                 <hr style="width:50px; border:5px solid #cf4f05;" class="w3-round">
             </div>
 
             <div class="w3-container information" id="services" style="margin-top:75px; background-color: #d47e4c; border-radius: 10px; border: 2px solid #502309;">
                 <h1 class="w3-xxxlarge" style="font-family: MonsterHunter;"><b>¿Qué podrás encontrar?</b></h1>
                 <img src="files/img/Sprite-Delegada.webp" alt="MH" class="intro_images">
-                <p style="font-family: MonsterHunter;" class="letter_size">Esta web es un proyecto academico en el cual se explican diversos aspectos del videojuego
-                Monster Hunter, como puede ser una breve introducción sobre de que trata el juego y algunas caracteristicas que lo hacen único.<br><br> Se hace un repaso 
-                de los diferentes videojuegos de la saga principal (los cuales van desde Monster Hunter 1 hasta el proximo Monster Hunter Now).<br><br>Entre otras cosas 
-                se habla de los tipos de monstruos que hay en la saga, como pueden ser los Wyvern Brutos, los Dragones Ancianos, etc.<br> Otra sitio que podemos visitar
-                es la sección de armas, donde se explica de forma general las caracteristicas de cada tipo de arma, por supuesto acompañado de un video para ver los combos.<br><br>
-                Y por último y no menos importante comentamos un poco la historia que hay detras del videojuego, y que solo se puede apreciar una vez se han jugado varios titulos 
-                de la saga.<br><br><br>Las diferentes secciones las encontraras aqui abajo o en el menu de la propia página.</p>
+                <p style="font-family: MonsterHunter;" class="letter_size">Esta web es un proyecto académico en el que se explican diversos aspectos del videojuego
+                Monster Hunter, como puede ser una breve introducción sobre de qué trata el juego y algunas características que lo hacen único.<br><br> Se hace un repaso 
+                de los diferentes videojuegos de la saga principal (los cuales van desde Monster Hunter 1, hasta el próximo Monster Hunter Now).<br><br>Entre otras cosas 
+                se habla de los tipos de monstruos que hay en la saga, como pueden ser: los Wyvern Brutos, los Dragones Ancianos, etc.<br> Otra sitio que podemos visitar
+                es la sección de armas, donde se explica de forma general las características de cada tipo de arma, por supuesto, acompañado de un video explicativo para ver los combos.<br><br>
+                Y por último, y no menos importante, comentamos un poco la historia que hay detrás del videojuego y que solo se puede apreciar una vez se han jugado varios títulos 
+                de la saga.<br><br><br>Las diferentes secciones las encontraras aquí abajo o en el menú de la propia página.</p>
 
                 <div class="container">
                     <a href="files/1_intro.htm">
@@ -187,23 +194,11 @@
 
             <!-- Footer -->
             <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px;">
-                <!-- <div align="center">
-                    <a href="https://www.facebook.com/rodrigo.mico.507/" target="_blank" title="Facebook"><i class='bx bxl-facebook' style="color: white; font-size: 25px;"></i></a>
-                    <a href="https://www.instagram.com/goldsolace_yt/" target="_blank" title="Instagram"><i class='bx bxl-instagram' style="color: white; font-size: 25px;"></i></a>
-                    <a href="https://twitter.com/Goldsolace9995" target="_blank" title="Twitter"><i class='bx bxl-twitter' style="color: white; font-size: 25px;"></i></a>
-                    <a href="https://www.linkedin.com/in/rodrigo-mic%C3%B3-pliego-572760258/" target="_blank" title="Linkedin"><i class='bx bxl-linkedin' style="color: white; font-size: 25px;"></i></a>
-                    <a href="https://github.com/GoldsolacePVG" target="_blank" title="GitHub"><i class='bx bxl-github' style="color: white; font-size: 25px;"></i></a>
-                </div> -->
                 <table class="last_part">
                     <tr>
-                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 200px;"><a href="files/footer_files/form.htm">Política de Privacidad</a></td>
-                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 300px;"><a href="files/footer_files/form.htm">Contactanos</a></td>
-                        <td class="cell_footer1" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 500px;" align="center"><a href="https://www.facebook.com/rodrigo.mico.507/" target="_blank" title="Facebook"><i class='bx bxl-facebook' style="color: white; font-size: 25px;"></i></a>
-                            <a href="https://www.instagram.com/goldsolace_yt/" target="_blank" title="Instagram"><i class='bx bxl-instagram' style="color: white; font-size: 25px;"></i></a>
-                            <a href="https://twitter.com/Goldsolace9995" target="_blank" title="Twitter"><i class='bx bxl-twitter' style="color: white; font-size: 25px;"></i></a>
-                            <a href="https://www.linkedin.com/in/rodrigo-mic%C3%B3-pliego-572760258/" target="_blank" title="Linkedin"><i class='bx bxl-linkedin' style="color: white; font-size: 25px;"></i></a>
-                            <a href="https://github.com/GoldsolacePVG" target="_blank" title="GitHub"><i class='bx bxl-github' style="color: white; font-size: 25px;"></i></a></td>
-                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;"><a href="files/footer_files/index.htm" target="_blank"><img src="files/img/copyright.png" width="20px" height="auto"> Felynes Hunter</a></td>
+                        <td class="cell_footer"><a href="files/footer_files/form.htm">Política de Privacidad</a></td>
+                        <td class="cell_footer2"><a href="files/footer_files/form.htm">Contactanos</a></td>
+                        <td class="cell_footer" style="width: 600px; text-align: right;"><a href="files/footer_files/index.htm" target="_blank"><img src="files/img/copyright.png" class="copyright" alt="Copyright"> Felynes Hunter</a></td>
                     </tr>
                 </table>
             </div>

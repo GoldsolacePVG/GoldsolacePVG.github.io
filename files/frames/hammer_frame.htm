@@ -1,9 +1,49 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(243, 195, 151);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(255, 170, 91); border: 3px solid rgb(206, 118, 3); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 50%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        Hammer
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">MARTILLO</h1>
+        <br><br><br>
+        <div class="text-info">
+            <p>El Martillo es un arma conocida desde el Monster Hunter que utiliza pura fuerza bruta. Firme y resistente, no destaca por su alcance o movilidad, aunque 
+                es sorprendentemente fácil de manejar a pesar de su gran tamaño.<br><br>Permite realizar varios ataques tales como golpe lateral, golpe descendente, golpe al mentón, etc. 
+                Además de la posibilidad de poder cargar ataques mientras se mueve. Sin embargo, el martillo carece de habilidades evasivas o defensivas sin contar la evasión básica.<br><br>
+                Se debe conocer bien el tiempo de cada movimiento para lograr un buen manejo del Martillo, cargar fuertes golpes y esquivar los ataques del enemigo son el objetivo 
+                principal para dominarlo.<br><br>Por otra parte, los Martillos poseen gran variedad de atributos elementales. No es posible cortar colas con el martillo, pero fácilmente se 
+                puede aturdir o romper las partes de un monstruo.<br><br>
+                El Martillo posee un afilado medio (sí, hay que afilarlo, y encima se afila el mango), pero algunos martillos pueden llegar al filo azul o morado. Además, al 
+                realizar los ataques de carga al máximo el arma no rebotará, el movimiento del ataque de carga dependerá de si se está o no en movimiento. Los conocidos ataques 
+                de golpe al mentón y "swing de golf" son útiles para aturdir a los monstruos.</p>
+        </div>
+        <div align="center">
+            <img src="../img/hammer_ex.webp" alt="Hammer" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/SHSusP0FUXg" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

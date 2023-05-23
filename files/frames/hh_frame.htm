@@ -1,9 +1,55 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(243, 195, 151);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(255, 170, 91); border: 3px solid rgb(206, 118, 3); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 45%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        Hunting Horn
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">Cuerno de Caza</h1>
+        <br><br><br>
+        <div class="text-info">
+            <p>Inicialmente el Cuerno de Caza era más débil que el Martillo, a pesar de compartir un mismo ataque como el Golpe Cargado. Su verdadero poder reside en su capacidad 
+            de entonar melodías para realizar diferentes efectos sobre el cazador, por lo que es un arma esencial para las cacerías en grupo.<br><br>
+            Desde el MHP3rd el Cuerno de Caza ha ganado más ataque que el martillo, aunque éste le siga ganando en daño bruto y capacidad de K.O., el Cuerno de Caza posee mayor 
+            ataque prolongado. Además ahora es capaz de cortar colas con su golpe de avance.<br><br>Cada Cuerno de Caza puede realizar 3 notas, que dependen del arma, y que se 
+            componen de distintas maneras en el modo recital para causar los diferentes efectos, que suelen durar un tiempo límite, aunque se puede doblar la melodía (repetirla) 
+            para maximizar su efecto y duración. Hay 7 notas:</p>
+            <ul>
+                <li>Nota Blanca - Aumenta el poder del cazador</li>
+                <li>Nota Morada - Similar a la blanca pero con mayor potencia</li>
+                <li>Nota Roja - Aumenta tus habilidades como la Salud, el Ataque y la Defensa.</li>
+                <li>Nota Azul Oscuro - Efectos de Resistencia Viento y Megazumo/Zumo de poder.</li>
+                <li>Nota Verde - Recupera salud y cura efectos de estado.</li>
+                <li>Nota Azul Claro - Aumenta la resistencia a los estados anormales.</li>
+                <li>Nota Amarilla - Aumenta el Ataque Elemental y la Defensa.</li>
+            </ul>
+        </div>
+        <div align="center">
+            <img src="../img/cuerno_ex.webp" alt="Hunting Horn" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/n-5jAq2Nyhs" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

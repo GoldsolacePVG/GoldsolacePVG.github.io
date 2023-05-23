@@ -1,9 +1,55 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta owner="Rodrigo">
+        <meta author="Rodrigo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+        <link rel="stylesheet" href="../css/own_styles.css">
         <style>
+            *{box-sizing: border-box;}
+            @font-face{font-family: MonsterHunter; src: url('../txt/monster-hunter.ttf');}
+            body{background-color: rgb(177, 243, 151);}
+            
+            .text-info{float: left; font-family: MonsterHunter; font-size: 20px; width: 50%; background-color: rgb(143, 255, 91); border: 3px solid rgb(27, 206, 3); border-radius: 1%; padding: 10px;}
+            .weapon-img{width: auto; height: 45%;}
+            @media screen and (max-width: 768px){
+                div iframe{width: 100%; height: 400px; margin-left: 20px;}
+                .text-info{width: 100%; margin-left: 20px; margin-bottom: 30px; font-size: 18px;}
+                .weapon-img{width: 95%; margin-left: 35px;}
+            }
+            @media screen and (max-width: 480px){
+                div iframe{width: 100%; height: 200px;}
+                .weapon-img{display: none;}
+            }
         </style>
     </head>
     <body>
-        Lance
+        <h1 style="font-family: MonsterHunter; font-size: 60px;" align="center">LANZA</h1>
+        <br><br><br>
+        <div class="text-info">
+            <p>Esta arma permite golpear desde cierta distancia y estar protegido gracias al impenetrable bloqueo que ofrece gracias a su gran escudo. Con esta arma se 
+            puede atacar a la vez que se bloquea.<br><br>
+            Esta arma posee pocos combos y no sirve para esquivar debido a su enorme tamaño. Sus movimientos consisten básicamente en ataque de escudo y diferentes lanzazos: 
+            medio, alto, barrido, contralanzazo... El ataque de bloqueo y avance permite atacar en numerosas situaciones sin dañarse ni salir volando por los aires.<br><br>
+            Además, la lanza también te permite realizar un ataque en carrera, que aunque no es muy potente, te permite asestar varios golpes en poco tiempo, pero se debe 
+            empezar a correr desde cierta distancia para conseguir potencia y que la lanza no rebote, también se puede dar un remate al monstruo una vez potenciada la carrera 
+            o parar en seco si se falla.</p>
+            <ul>
+                <li>Buen alcance en distancia y altura.</li>
+                <li>Es el arma con mejor bloqueo.</li>
+                <li>Buen poder de ataque, y muchas lanzas potencian la defensa.</li>
+                <li>Buen afilado.</li>
+                <li>Permite cortar colas.</li>
+                <li>Permite atacar mientras se bloquea.</li>
+            </ul>
+        </div>
+        <div align="center">
+            <img src="../img/lance_ex.webp" alt="Lance" class="weapon-img" id="borderindeximg">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <iframe width="40%" height="40%" src="https://www.youtube.com/embed/jsWulkr5cgQ" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

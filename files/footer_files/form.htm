@@ -59,43 +59,32 @@
             input[type = reset]:hover {
               background-color: #302d2d;
             }
-
-            
             
             body{
                 background-image: url('../img/background_img.jpg'); 
                 background-size: 1920px 1000px; 
-                background-repeat: no-repeat;
+                /* background-repeat: no-repeat; */
                 background-attachment: fixed;
             }
-            
-            .last_part{width: 100%;}
-            .cell_footer{width: 100px;}
-            .end_information{margin-top:50px; padding-right:58px; background-color: black; margin-left: -40px; margin-right: -40px;}
+            a:link, a:visited, a:active{
+                text-decoration: none;
+            }
 
             .container{border-radius: 5px; border: 2px solid #502309; background-color: #d47e4c; padding: 20px; font-family: MonsterHunter; font-size: 20px;}
             .col-25{float: left; width: 25%; margin-top: 6px;}
             .col-75{float: left; width: 75%; margin-top: 6px;}
             .row::after{content: ""; display: table; clear: both;}
-            .responsive{padding: 0 6px; float: left; width: 13.222222%; margin-bottom: 5px; margin-right: 10px; margin-left: 5px;}
             .logo{width: auto; height: 100px; padding-left: 15px;}
+            .social_container{height: 150px;}
 
             @media only screen and (max-width:768px){
-                body{width: 90%;}
-                .logo{height: 110px; width: auto; padding-top: 20px;}
-                .responsive{width: 49.99999%; margin: 6px 0;}
-                .last_part{width: 104%;}
-                .cell_footer{width: 200px;}
-                .end_information{margin-left: 0px; margin-right: 0px; width: 113%;}
             }
             @media only screen and (max-width:480px){
-                body{width: 80%;}
-                .logo{height: 110px; width: auto; padding-top: 15px;}
-                .responsive{width: 100%;}
-                .last_part{width: 113%;}
-                .end_information{margin-left: 0px; margin-right: 0px; width: 125%;}
                 .col-25, .col-75, input[type=submit], input[type=reset]{width: 100%; margin-top: 0;}
                 input[type=submit]{margin-right: 0px; margin-top: 10px;}
+                .cell_footer{font-size: 15px;}
+                .cell_footer2{font-size: 15px;}
+                .social_container{margin-left: 30px; width: 102%;}
             }
             
             .clearfix:after {
@@ -119,13 +108,6 @@
                 <a href="../3_monsters.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Monstruos       <img src="../img/monsters_icon.png" width="auto" height="70px"></a> 
                 <a href="../4_weapons.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Armas <img src="../img/longsword_icon.webp" width="auto" height="50px"></a>
                 <a href="../5_lore.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-family: MonsterHunter; font-size: 30px;">Lore       <img src="../img/lore_icon.webp" width="auto" height="60px"></a>
-            </div>
-            <div class="social_media">
-                <a href="https://www.facebook.com/rodrigo.mico.507/" target="_blank" title="Facebook"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/goldsolace_yt/" target="_blank" title="Instagram"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://twitter.com/Goldsolace9995" target="_blank" title="Twitter"><i class='bx bxl-twitter' ></i></a>
-                <a href="https://www.linkedin.com/in/rodrigo-mic%C3%B3-pliego-572760258/" target="_blank" title="Linkedin"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/GoldsolacePVG" target="_blank" title="GitHub"><i class='bx bxl-github' ></i></a>
             </div>
         </nav>
   
@@ -243,18 +225,26 @@
                     judicial.</p>
                 <p>FelynesHunter Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier
                     momento.</p>
-                <p>Esta politica de privacidad se han generado en <a href="https://politicadeprivacidadplantilla.com/"
-                        target="_blank">politicadeprivacidadplantilla.com</a>.<br></p>
+                <p>Esta politica de privacidad se han generado en <a href="https://politicadeprivacidadplantilla.com/" target="_blank">politicadeprivacidadplantilla.com</a>.<br></p>
             </div>
-
+            <div class="container">
+                <h2 align="center" style="font-family: MonsterHunter;">REDES SOCIALES</h2>
+                <div class="social_icons" align="center">
+                    <a href="https://www.facebook.com/rodrigo.mico.507/" target="_blank" title="Facebook"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/goldsolace_yt/" target="_blank" title="Instagram"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/Goldsolace9995" target="_blank" title="Twitter"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.linkedin.com/in/rodrigo-mic%C3%B3-pliego-572760258/" target="_blank" title="Linkedin"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/GoldsolacePVG" target="_blank" title="GitHub"><i class='bx bxl-github' ></i></a>
+                </div>
+            </div>
 
             <!-- Footer -->
             <div class="w3-container w3-padding-32 end_information" style="margin-top:75px; padding-right:58px">
                 <table class="last_part">
                     <tr>
-                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="form.htm">Política de Privacidad</a></td>
-                        <td class="cell_footer" style="color: white; font-family: MonsterHunter; font-size: 18px; width: 100px;"><a href="form.htm">Contactanos</a></td>
-                        <td style="color: white; font-family: MonsterHunter; font-size: 18px; width: 600px; text-align: right;"><a href="index.htm" target="_blank"><img src="../img/copyright.png" width="20px" height="auto"> Felynes Hunter</a></td>
+                        <td class="cell_footer"><a href="../footer_files/form.htm">Política de Privacidad</a></td>
+                        <td class="cell_footer2"><a href="../footer_files/form.htm">Contactanos</a></td>
+                        <td class="cell_footer" style="width: 600px; text-align: right;"><a href="index.htm" target="_blank"><img src="../img/copyright.png" class="copyright" alt="Copyright"> Felynes Hunter</a></td>
                     </tr>
                 </table>
             </div>
