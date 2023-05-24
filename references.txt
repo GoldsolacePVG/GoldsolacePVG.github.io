@@ -1,3 +1,0 @@
-files/img/wallpaper_3.jpg = https://gameranx.com/updates/id/184149/article/monster-hunter-world-iceborne-expansion-wallpapers-in-ultra-hd-4k/
-files/img/Monster-Hunter-Logo-2004.png = https://1000marcas.net/monster-hunter-logo/
-files/img/felynes.gif = https://www.deviantart.com/zedotagger/art/Monster-Hunter-BBQ-Spit-508331788

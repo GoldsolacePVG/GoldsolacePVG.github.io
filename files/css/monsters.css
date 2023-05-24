@@ -1,6 +1,6 @@
 @font-face{
-    font-family: special_type; 
-    src: url('../txt/zelda-type.otf');
+  font-family: special_type; 
+  src: url('../txt/zelda-type.otf');
 }
 
 .monster-container{
